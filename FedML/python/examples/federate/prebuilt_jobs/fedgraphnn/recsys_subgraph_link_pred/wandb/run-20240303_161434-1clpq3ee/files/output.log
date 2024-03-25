@@ -1,0 +1,317 @@
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:39] [INFO] [__init__.py:160:init] args.rank = 1, args.process_id = 1, args.worker_num = 2
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:39] [INFO] [gpu_mapping_mpi.py:13:mapping_processes_to_gpu_device_from_yaml_file_mpi]  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:39] [INFO] [gpu_mapping_mpi.py:14:mapping_processes_to_gpu_device_from_yaml_file_mpi]  ################## You do not indicate gpu_util_file, will use CPU training  #################
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:39] [INFO] [ml_engine_adapter.py:147:get_torch_device] args = <fedml.arguments.Arguments object at 0x102e24fa0>, using_gpu = False, device_id = None, device_type = cpu
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:39] [INFO] [gpu_mapping_mpi.py:16:mapping_processes_to_gpu_device_from_yaml_file_mpi] cpu
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:39] [INFO] [device.py:68:get_device] device = cpu
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:39] [INFO] [data_loader.py:221:create_category_split] reading data
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:39] [INFO] [data_loader.py:174:get_data_category] read mapping
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:39] [INFO] [data_loader.py:178:get_data_category] build networkx graph
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:39] [INFO] [data_loader.py:181:get_data_category] get partion
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:39] [INFO] [data_loader.py:184:get_data_category] subgraphing
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:45] [INFO] [data_loader.py:187:get_data_category] check client num is smaller than subgraphs number, which is 28
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:45] [INFO] [data_loader.py:152:combine_category] combining subgraphs for 0 client
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:45] [INFO] [data_loader.py:155:combine_category] combined 2 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:45] [INFO] [data_loader.py:155:combine_category] combined 3 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:46] [INFO] [data_loader.py:155:combine_category] combined 4 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:47] [INFO] [data_loader.py:155:combine_category] combined 5 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:48] [INFO] [data_loader.py:155:combine_category] combined 6 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:48] [INFO] [data_loader.py:155:combine_category] combined 7 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:48] [INFO] [data_loader.py:152:combine_category] combining subgraphs for 1 client
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:48] [INFO] [data_loader.py:155:combine_category] combined 2 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:48] [INFO] [data_loader.py:155:combine_category] combined 3 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:49] [INFO] [data_loader.py:155:combine_category] combined 4 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:50] [INFO] [data_loader.py:155:combine_category] combined 5 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:50] [INFO] [data_loader.py:155:combine_category] combined 6 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:50] [INFO] [data_loader.py:155:combine_category] combined 7 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:50] [INFO] [data_loader.py:152:combine_category] combining subgraphs for 2 client
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:50] [INFO] [data_loader.py:155:combine_category] combined 2 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:51] [INFO] [data_loader.py:155:combine_category] combined 3 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:51] [INFO] [data_loader.py:155:combine_category] combined 4 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:52] [INFO] [data_loader.py:155:combine_category] combined 5 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:53] [INFO] [data_loader.py:155:combine_category] combined 6 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:53] [INFO] [data_loader.py:155:combine_category] combined 7 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:53] [INFO] [data_loader.py:152:combine_category] combining subgraphs for 3 client
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:53] [INFO] [data_loader.py:155:combine_category] combined 2 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:54] [INFO] [data_loader.py:155:combine_category] combined 3 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:54] [INFO] [data_loader.py:155:combine_category] combined 4 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:54] [INFO] [data_loader.py:155:combine_category] combined 5 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:55] [INFO] [data_loader.py:155:combine_category] combined 6 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:55] [INFO] [data_loader.py:155:combine_category] combined 7 subgraphs
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:55] [INFO] [data_loader.py:197:get_data_category] converting to node degree
+/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch_geometric/data/storage.py:450: UserWarning: Unable to accurately infer 'num_nodes' from the attribute set '{'edge_index', 'index_orig', 'edge_label'}'. Please explicitly set 'num_nodes' as an attribute of 'data' to suppress this warning
+  warnings.warn(
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [data_loader.py:200:get_data_category] spliting into trian val and test
+/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [data_loader.py:268:load_partition_data] Client idx = 0, local sample number = 10
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [data_loader.py:268:load_partition_data] Client idx = 1, local sample number = 10
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [data_loader.py:268:load_partition_data] Client idx = 2, local sample number = 10
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [data_loader.py:268:load_partition_data] Client idx = 3, local sample number = 10
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [fedml_subgraph_link_prediction.py:53:create_model] create_model. model_name = sage
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [contribution_assessor_manager.py:16:_build_assessor] contribution_alg is not set, assessor is None
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [fedml_comm_manager.py:27:run] running
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [fedml_comm_manager.py:37:receive_message] communication backend is alive (loop_forever, sender 0 to receiver 0)
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [WARNING] [com_manager.py:137:_notify_connection_ready] Cannot handle connection ready.
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 1, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [fed_subgraph_lp_trainer.py:21:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:57] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:59] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 0, Iter = 1/1: Test score = 1.0630035400390625
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:59] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:59] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:14:59] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:00] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 1, Iter = 1/1: Test score = 0.7686160206794739
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:00] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:00] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:00] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:00] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 2, Iter = 1/1: Test score = 0.5985909104347229
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:00] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:00] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:00] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:01] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 3, Iter = 1/1: Test score = 0.9745700359344482
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:01] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:01] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:01] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:02] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 4, Iter = 1/1: Test score = 0.7606747150421143
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:02] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:02] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:02] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:04] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:04] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:04] [INFO] [fed_subgraph_lp_trainer.py:21:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:04] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:05] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 0, Iter = 1/1: Test score = 0.5781168341636658
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:05] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:05] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:05] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:06] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 1, Iter = 1/1: Test score = 0.625139594078064
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:06] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:06] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:06] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:07] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 2, Iter = 1/1: Test score = 0.5857715606689453
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:07] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:07] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:07] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:08] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 3, Iter = 1/1: Test score = 0.5773850679397583
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:08] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:08] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:08] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:09] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 4, Iter = 1/1: Test score = 0.611149787902832
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:09] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:09] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:09] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:10] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:10] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:10] [INFO] [fed_subgraph_lp_trainer.py:21:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:10] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 2
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:11] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 0, Iter = 1/1: Test score = 0.7240528464317322
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:11] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:11] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:11] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:12] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 1, Iter = 1/1: Test score = 0.5794824957847595
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:12] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:12] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:12] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:13] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 2, Iter = 1/1: Test score = 0.8181529641151428
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:13] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:13] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:13] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:14] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 3, Iter = 1/1: Test score = 0.6602303385734558
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:14] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:14] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:14] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:15] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 4, Iter = 1/1: Test score = 0.5764629244804382
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:15] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:15] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:15] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:16] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:16] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:16] [INFO] [fed_subgraph_lp_trainer.py:21:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:16] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 3
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:17] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 0, Iter = 1/1: Test score = 1.2165889739990234
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:17] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:17] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:17] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:18] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 1, Iter = 1/1: Test score = 0.6471642255783081
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:18] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:18] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:18] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:19] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 2, Iter = 1/1: Test score = 0.5644229650497437
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:19] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:19] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:19] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:20] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 3, Iter = 1/1: Test score = 0.6764867901802063
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:20] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:20] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:20] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:20] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 4, Iter = 1/1: Test score = 0.7309999465942383
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:20] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:20] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:20] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:22] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:22] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:22] [INFO] [fed_subgraph_lp_trainer.py:21:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:22] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 4
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:23] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 0, Iter = 1/1: Test score = 0.6282231211662292
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:23] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:23] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:23] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:23] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 1, Iter = 1/1: Test score = 0.7851505279541016
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:23] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:23] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:23] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:24] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 2, Iter = 1/1: Test score = 0.6324471235275269
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:24] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:24] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:24] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:25] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 3, Iter = 1/1: Test score = 0.570300817489624
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:25] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:25] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:25] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:26] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 4, Iter = 1/1: Test score = 0.5628851056098938
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:26] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:26] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:26] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:27] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:27] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:27] [INFO] [fed_subgraph_lp_trainer.py:21:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:27] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 5
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:28] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 0, Iter = 1/1: Test score = 0.7557547688484192
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:28] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:28] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:28] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:29] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 1, Iter = 1/1: Test score = 0.6269348859786987
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:29] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:29] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:29] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:29] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 2, Iter = 1/1: Test score = 0.5671796798706055
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:29] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:29] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:29] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:30] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 3, Iter = 1/1: Test score = 0.5623675584793091
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:30] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:30] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:30] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:31] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 4, Iter = 1/1: Test score = 0.5636631846427917
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:31] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:31] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:31] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:32] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:32] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:32] [INFO] [fed_subgraph_lp_trainer.py:21:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:32] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 6
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:33] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 0, Iter = 1/1: Test score = 0.8360300660133362
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:33] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:33] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:33] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:34] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 1, Iter = 1/1: Test score = 0.6225721836090088
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:34] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:34] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:34] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:35] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 2, Iter = 1/1: Test score = 0.5579988360404968
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:35] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:35] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:35] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:36] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 3, Iter = 1/1: Test score = 0.5536684393882751
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:36] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:36] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:36] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:37] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 4, Iter = 1/1: Test score = 0.5543895959854126
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:37] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:37] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:37] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:38] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:38] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:38] [INFO] [fed_subgraph_lp_trainer.py:21:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:38] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 7
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:39] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 0, Iter = 1/1: Test score = 0.7226237058639526
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:39] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:39] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:39] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:40] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 1, Iter = 1/1: Test score = 0.6270602941513062
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:40] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:40] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:40] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:41] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 2, Iter = 1/1: Test score = 0.5569448471069336
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:41] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:41] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:41] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:41] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 3, Iter = 1/1: Test score = 0.5545106530189514
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:41] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:41] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:41] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:42] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 4, Iter = 1/1: Test score = 0.5683828592300415
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:42] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:42] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:42] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:44] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:44] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:44] [INFO] [fed_subgraph_lp_trainer.py:21:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:44] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 8
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:45] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 0, Iter = 1/1: Test score = 0.9684920907020569
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:45] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:45] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:45] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:46] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 1, Iter = 1/1: Test score = 0.6333332061767578
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:46] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:46] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:46] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:47] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 2, Iter = 1/1: Test score = 0.5491933226585388
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:47] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:47] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:47] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:47] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 3, Iter = 1/1: Test score = 0.5438114404678345
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:47] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:47] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:47] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:48] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 4, Iter = 1/1: Test score = 0.542946457862854
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:48] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:48] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:48] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:50] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:50] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:50] [INFO] [fed_subgraph_lp_trainer.py:21:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:50] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 9
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:50] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 0, Iter = 1/1: Test score = 0.6587004661560059
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:50] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:50] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:50] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:51] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 1, Iter = 1/1: Test score = 0.6787053942680359
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:51] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:51] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:51] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:52] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 2, Iter = 1/1: Test score = 0.6002509593963623
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:52] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:52] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:52] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:53] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 3, Iter = 1/1: Test score = 0.5707772374153137
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:53] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:53] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:53] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:54] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 4, Iter = 1/1: Test score = 0.5872384905815125
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:54] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:54] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:54] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:55] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:55] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:55] [INFO] [fed_subgraph_lp_trainer.py:21:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:55] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 10
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:56] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 0, Iter = 1/1: Test score = 0.9573169350624084
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:56] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:56] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:56] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:57] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 1, Iter = 1/1: Test score = 0.6442845463752747
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:57] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:57] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:57] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:58] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 2, Iter = 1/1: Test score = 0.5419471263885498
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:58] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:58] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:58] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:59] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 3, Iter = 1/1: Test score = 0.5370301008224487
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:59] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:59] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:59] [INFO] [fed_subgraph_lp_trainer.py:74:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:59] [INFO] [fed_subgraph_lp_trainer.py:64:train] Epoch = 4, Iter = 1/1: Test score = 0.537000298500061
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:59] [INFO] [fed_subgraph_lp_trainer.py:64:train]
+[FedML-Client @device-id-0] [Sun, 03 Mar 2024 08:15:59] [INFO] [fed_subgraph_lp_trainer.py:74:train] Current best = 0

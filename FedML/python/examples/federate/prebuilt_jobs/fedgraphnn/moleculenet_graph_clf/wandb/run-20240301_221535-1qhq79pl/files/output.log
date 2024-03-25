@@ -1,0 +1,86 @@
+Epoch = 0, Iter = 1182/1182: Test Score = 0.610834332234542
+Current best = 0.610834332234542
+Epoch = 1, Iter = 1182/1182: Test Score = 0.649298271900909
+Current best = 0.649298271900909
+Epoch = 2, Iter = 1182/1182: Test Score = 0.6540894301982105
+Current best = 0.6540894301982105
+Epoch = 3, Iter = 1182/1182: Test Score = 0.6597073576209027
+Current best = 0.6597073576209027
+Epoch = 4, Iter = 1182/1182: Test Score = 0.7603270331207101
+Current best = 0.7603270331207101
+Epoch = 5, Iter = 1182/1182: Test Score = 0.8608370078627794
+Current best = 0.8608370078627794
+Epoch = 6, Iter = 1182/1182: Test Score = 0.8705985915492958
+Current best = 0.8705985915492958
+Epoch = 7, Iter = 1182/1182: Test Score = 0.8235235883385419
+Current best = 0.8705985915492958
+Epoch = 8, Iter = 1182/1182: Test Score = 0.8349984659731438
+Current best = 0.8705985915492958
+Epoch = 9, Iter = 1182/1182: Test Score = 0.8456715470125717
+Current best = 0.8705985915492958
+Epoch = 10, Iter = 1182/1182: Test Score = 0.8481866375558315
+Current best = 0.8705985915492958
+Epoch = 11, Iter = 1182/1182: Test Score = 0.8781688357092912
+Current best = 0.8781688357092912
+Epoch = 12, Iter = 1182/1182: Test Score = 0.8510852348131341
+Current best = 0.8781688357092912
+Epoch = 13, Iter = 1182/1182: Test Score = 0.8861823422806341
+Current best = 0.8861823422806341
+Epoch = 14, Iter = 1182/1182: Test Score = 0.8847330436519827
+Current best = 0.8861823422806341
+Epoch = 15, Iter = 1182/1182: Test Score = 0.8519120039385248
+Current best = 0.8861823422806341
+Epoch = 16, Iter = 1182/1182: Test Score = 0.899549780955235
+Current best = 0.899549780955235
+Epoch = 17, Iter = 1182/1182: Test Score = 0.8996692923498437
+Current best = 0.8996692923498437
+Epoch = 18, Iter = 1182/1182: Test Score = 0.857026913252565
+Current best = 0.8996692923498437
+Epoch = 19, Iter = 1182/1182: Test Score = 0.9028916406238852
+Current best = 0.9028916406238852
+Epoch = 20, Iter = 1182/1182: Test Score = 0.9061737445952309
+Current best = 0.9061737445952309
+Epoch = 21, Iter = 1182/1182: Test Score = 0.9009990795838863
+Current best = 0.9061737445952309
+Epoch = 22, Iter = 1182/1182: Test Score = 0.8928063059206301
+Current best = 0.9061737445952309
+Epoch = 23, Iter = 1182/1182: Test Score = 0.8464233985473122
+Current best = 0.9061737445952309
+Epoch = 24, Iter = 1182/1182: Test Score = 0.9057902378811878
+Current best = 0.9061737445952309
+Epoch = 25, Iter = 1182/1182: Test Score = 0.9095753599611855
+Current best = 0.9095753599611855
+Epoch = 26, Iter = 1182/1182: Test Score = 0.8984590165104099
+Current best = 0.9095753599611855
+Epoch = 27, Iter = 1182/1182: Test Score = 0.9060292606704055
+Current best = 0.9095753599611855
+Epoch = 28, Iter = 1182/1182: Test Score = 0.8978614595373661
+Current best = 0.9095753599611855
+Epoch = 29, Iter = 1182/1182: Test Score = 0.8941708763217604
+Current best = 0.9095753599611855
+Epoch = 30, Iter = 1182/1182: Test Score = 0.893224595801761
+Current best = 0.9095753599611855
+Traceback (most recent call last):
+  File "local.py", line 182, in <module>
+    trainer.train(dataset[2], 'cpu', args)
+  File "/Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/trainer/gat_readout_trainer.py", line 71, in train
+    loss.backward()
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch/_tensor.py", line 524, in backward
+    torch.autograd.backward(
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "local.py", line 182, in <module>
+    trainer.train(dataset[2], 'cpu', args)
+  File "/Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/trainer/gat_readout_trainer.py", line 71, in train
+    loss.backward()
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch/_tensor.py", line 524, in backward
+    torch.autograd.backward(
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

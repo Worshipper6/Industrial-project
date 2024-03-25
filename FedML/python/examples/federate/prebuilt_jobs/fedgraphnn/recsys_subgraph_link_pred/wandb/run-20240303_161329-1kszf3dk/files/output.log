@@ -1,0 +1,79 @@
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:32] [INFO] [__init__.py:160:init] args.rank = 0, args.process_id = 0, args.worker_num = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:32] [INFO] [gpu_mapping_mpi.py:13:mapping_processes_to_gpu_device_from_yaml_file_mpi]  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:32] [INFO] [gpu_mapping_mpi.py:14:mapping_processes_to_gpu_device_from_yaml_file_mpi]  ################## You do not indicate gpu_util_file, will use CPU training  #################
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:32] [INFO] [ml_engine_adapter.py:147:get_torch_device] args = <fedml.arguments.Arguments object at 0x100a18fa0>, using_gpu = False, device_id = None, device_type = cpu
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:32] [INFO] [gpu_mapping_mpi.py:16:mapping_processes_to_gpu_device_from_yaml_file_mpi] cpu
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:32] [INFO] [device.py:68:get_device] device = cpu
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:32] [INFO] [data_loader.py:221:create_category_split] reading data
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:32] [INFO] [data_loader.py:174:get_data_category] read mapping
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:33] [INFO] [data_loader.py:178:get_data_category] build networkx graph
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:33] [INFO] [data_loader.py:181:get_data_category] get partion
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:33] [INFO] [data_loader.py:184:get_data_category] subgraphing
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:39] [INFO] [data_loader.py:187:get_data_category] check client num is smaller than subgraphs number, which is 28
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:39] [INFO] [data_loader.py:152:combine_category] combining subgraphs for 0 client
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:39] [INFO] [data_loader.py:155:combine_category] combined 2 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:39] [INFO] [data_loader.py:155:combine_category] combined 3 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:40] [INFO] [data_loader.py:155:combine_category] combined 4 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:40] [INFO] [data_loader.py:155:combine_category] combined 5 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:41] [INFO] [data_loader.py:155:combine_category] combined 6 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:42] [INFO] [data_loader.py:155:combine_category] combined 7 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:42] [INFO] [data_loader.py:152:combine_category] combining subgraphs for 1 client
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:42] [INFO] [data_loader.py:155:combine_category] combined 2 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:42] [INFO] [data_loader.py:155:combine_category] combined 3 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:43] [INFO] [data_loader.py:155:combine_category] combined 4 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:43] [INFO] [data_loader.py:155:combine_category] combined 5 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:43] [INFO] [data_loader.py:155:combine_category] combined 6 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:43] [INFO] [data_loader.py:155:combine_category] combined 7 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:44] [INFO] [data_loader.py:152:combine_category] combining subgraphs for 2 client
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:44] [INFO] [data_loader.py:155:combine_category] combined 2 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:44] [INFO] [data_loader.py:155:combine_category] combined 3 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:44] [INFO] [data_loader.py:155:combine_category] combined 4 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:45] [INFO] [data_loader.py:155:combine_category] combined 5 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:46] [INFO] [data_loader.py:155:combine_category] combined 6 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:46] [INFO] [data_loader.py:155:combine_category] combined 7 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:46] [INFO] [data_loader.py:152:combine_category] combining subgraphs for 3 client
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:46] [INFO] [data_loader.py:155:combine_category] combined 2 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:47] [INFO] [data_loader.py:155:combine_category] combined 3 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:48] [INFO] [data_loader.py:155:combine_category] combined 4 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:48] [INFO] [data_loader.py:155:combine_category] combined 5 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:48] [INFO] [data_loader.py:155:combine_category] combined 6 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:48] [INFO] [data_loader.py:155:combine_category] combined 7 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:49] [INFO] [data_loader.py:197:get_data_category] converting to node degree
+/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch_geometric/data/storage.py:450: UserWarning: Unable to accurately infer 'num_nodes' from the attribute set '{'index_orig', 'edge_label', 'edge_index'}'. Please explicitly set 'num_nodes' as an attribute of 'data' to suppress this warning
+  warnings.warn(
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:51] [INFO] [data_loader.py:200:get_data_category] spliting into trian val and test
+/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:51] [INFO] [data_loader.py:268:load_partition_data] Client idx = 0, local sample number = 10
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:51] [INFO] [data_loader.py:268:load_partition_data] Client idx = 1, local sample number = 10
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:51] [INFO] [data_loader.py:268:load_partition_data] Client idx = 2, local sample number = 10
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:51] [INFO] [data_loader.py:268:load_partition_data] Client idx = 3, local sample number = 10
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:51] [INFO] [fedml_subgraph_link_prediction.py:53:create_model] create_model. model_name = sage
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:51] [INFO] [contribution_assessor_manager.py:16:_build_assessor] contribution_alg is not set, assessor is None
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:51] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:52] [INFO] [fedml_comm_manager.py:27:run] running
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:52] [INFO] [fedml_comm_manager.py:37:receive_message] communication backend is alive (loop_forever, sender 0 to receiver 0)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:52] [WARNING] [com_manager.py:137:_notify_connection_ready] Cannot handle connection ready.
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:56] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:56] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:56] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:56] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:56] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:56] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:56] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:57] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 0.75797039270401, mae = [0.7579704], rmse = [0.97977424], mse = [0.95995754]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:57] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:57] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 0.7882081866264343, mae = [0.7882082], rmse = [0.95018494], mse = [0.90285146]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:57] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:57] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:57] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 0.8952420353889465, mae = [0.89524204], rmse = [1.0221621], mse = [1.0448154]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:58] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:58] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:58] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:58] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 0.7993804216384888, mae = [0.7993804], rmse = [0.97174585], mse = [0.94429004]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:58] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 0.8102002143859863, mae = 0.8102002143859863, rmse = 0.9809668064117432, mse = 0.9629786014556885
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:58] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:58] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:58] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:58] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 08:13:58] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]

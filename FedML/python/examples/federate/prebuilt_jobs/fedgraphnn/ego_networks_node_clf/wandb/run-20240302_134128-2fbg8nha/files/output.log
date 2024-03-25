@@ -1,0 +1,427 @@
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [__init__.py:160:init] args.rank = 1, args.process_id = 1, args.worker_num = 2
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [gpu_mapping_mpi.py:13:mapping_processes_to_gpu_device_from_yaml_file_mpi]  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [gpu_mapping_mpi.py:14:mapping_processes_to_gpu_device_from_yaml_file_mpi]  ################## You do not indicate gpu_util_file, will use CPU training  #################
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [ml_engine_adapter.py:147:get_torch_device] args = <fedml.arguments.Arguments object at 0x1026c8fa0>, using_gpu = False, device_id = None, device_type = cpu
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [gpu_mapping_mpi.py:16:mapping_processes_to_gpu_device_from_yaml_file_mpi] cpu
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [device.py:68:get_device] device = cpu
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [data_loader.py:29:create_random_split] train_size = 800, val_size = 100, test_size = 100
+/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [data_loader.py:199:load_partition_data] Client idx = 0, local sample number = 80
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [data_loader.py:199:load_partition_data] Client idx = 1, local sample number = 80
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [data_loader.py:199:load_partition_data] Client idx = 2, local sample number = 80
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [data_loader.py:199:load_partition_data] Client idx = 3, local sample number = 80
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [data_loader.py:199:load_partition_data] Client idx = 4, local sample number = 80
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [data_loader.py:199:load_partition_data] Client idx = 5, local sample number = 80
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [data_loader.py:199:load_partition_data] Client idx = 6, local sample number = 80
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [data_loader.py:199:load_partition_data] Client idx = 7, local sample number = 80
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [data_loader.py:199:load_partition_data] Client idx = 8, local sample number = 80
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [data_loader.py:199:load_partition_data] Client idx = 9, local sample number = 80
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [fedml_ego_networks_node_clf.py:67:create_model] create_model. model_name = sage, output_dim = 6
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [fedml_ego_networks_node_clf.py:84:create_model] Model and Trainer  - done
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [contribution_assessor_manager.py:16:_build_assessor] contribution_alg is not set, assessor is None
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [fedml_comm_manager.py:27:run] running
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [fedml_comm_manager.py:37:receive_message] communication backend is alive (loop_forever, sender 0 to receiver 0)
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [WARNING] [com_manager.py:137:_notify_connection_ready] Cannot handle connection ready.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 1, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:31] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 0
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 2
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 3
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 4
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 5
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 6
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:32] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 7
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 8
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 9
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 10
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 11
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 12
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 13
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:33] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 14
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 15
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 16
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 17
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 18
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 19
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:34] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 20
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 21
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 22
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 23
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 24
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 25
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:35] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 26
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 27
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 28
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 29
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 30
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 31
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 32
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:36] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 33
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 34
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 35
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 36
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 37
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 38
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 39
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:37] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 40
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 41
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 42
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 43
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 44
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 45
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 46
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:38] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 47
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 48
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 49
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 50
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 51
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 52
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 53
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:39] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 54
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 55
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 56
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 57
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 58
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 59
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 60
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:40] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 61
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 62
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 63
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 64
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 65
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 66
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 67
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 68
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:41] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 69
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 70
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 71
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 72
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 73
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 74
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 75
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:42] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 76
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 77
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 78
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 79
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 80
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 81
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:43] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 82
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 83
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 84
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 85
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 86
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 87
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 88
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:44] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 89
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 90
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 91
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 92
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 93
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 94
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 95
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:45] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 96
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 97
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 98
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 1
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [FedAvgClientManager.py:51:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [federated_nc_trainer.py:19:set_model_params] set_model_params
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [FedAvgClientManager.py:74:__train] #######training########### round_id = 99
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [fedml_comm_manager.py:67:finish] __finish
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [com_manager.py:98:handle_receive_message] Handle receive message stopped!
+[FedML-Client @device-id-0] [Sat, 02 Mar 2024 05:41:46] [INFO] [fedml_comm_manager.py:29:run] finished...

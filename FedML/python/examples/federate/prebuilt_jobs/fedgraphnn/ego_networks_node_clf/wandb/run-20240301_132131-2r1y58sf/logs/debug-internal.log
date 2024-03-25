@@ -1,0 +1,176 @@
+2024-03-01 13:21:31,557 INFO    StreamThr :31579 [internal.py:wandb_internal():90] W&B internal server running at pid: 31579, started at: 2024-03-01 13:21:31.556939
+2024-03-01 13:21:31,558 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: status
+2024-03-01 13:21:31,559 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: status
+2024-03-01 13:21:31,560 DEBUG   SenderThread:31579 [sender.py:send():302] send: header
+2024-03-01 13:21:31,560 INFO    WriterThread:31579 [datastore.py:open_for_write():75] open: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/run-2r1y58sf.wandb
+2024-03-01 13:21:31,575 DEBUG   SenderThread:31579 [sender.py:send():302] send: run
+2024-03-01 13:21:32,764 INFO    SenderThread:31579 [dir_watcher.py:__init__():216] watching files in: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files
+2024-03-01 13:21:32,764 INFO    SenderThread:31579 [sender.py:_start_run_threads():913] run started: 2r1y58sf with start time 1709270491.550808
+2024-03-01 13:21:32,769 DEBUG   SenderThread:31579 [sender.py:send():302] send: summary
+2024-03-01 13:21:32,770 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: check_version
+2024-03-01 13:21:32,770 INFO    SenderThread:31579 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 13:21:32,770 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: check_version
+2024-03-01 13:21:32,850 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: run_start
+2024-03-01 13:21:32,853 DEBUG   HandlerThread:31579 [meta.py:__init__():35] meta init
+2024-03-01 13:21:32,853 DEBUG   HandlerThread:31579 [meta.py:__init__():50] meta init done
+2024-03-01 13:21:32,853 DEBUG   HandlerThread:31579 [meta.py:probe():216] probe
+2024-03-01 13:21:32,861 DEBUG   HandlerThread:31579 [meta.py:_setup_git():206] setup git
+2024-03-01 13:21:32,888 DEBUG   HandlerThread:31579 [meta.py:_setup_git():213] setup git done
+2024-03-01 13:21:32,888 DEBUG   HandlerThread:31579 [meta.py:_save_pip():54] save pip
+2024-03-01 13:21:32,888 DEBUG   HandlerThread:31579 [meta.py:_save_pip():68] save pip done
+2024-03-01 13:21:32,888 DEBUG   HandlerThread:31579 [meta.py:_save_conda():75] save conda
+2024-03-01 13:21:33,770 INFO    Thread-12 :31579 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/conda-environment.yaml
+2024-03-01 13:21:33,770 INFO    Thread-12 :31579 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/wandb-summary.json
+2024-03-01 13:21:33,770 INFO    Thread-12 :31579 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/requirements.txt
+2024-03-01 13:21:34,973 DEBUG   HandlerThread:31579 [meta.py:_save_conda():85] save conda done
+2024-03-01 13:21:34,973 DEBUG   HandlerThread:31579 [meta.py:probe():254] probe done
+2024-03-01 13:21:34,975 DEBUG   SenderThread:31579 [sender.py:send():302] send: telemetry
+2024-03-01 13:21:34,975 DEBUG   SenderThread:31579 [sender.py:send():302] send: files
+2024-03-01 13:21:34,975 INFO    SenderThread:31579 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2024-03-01 13:21:34,978 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 13:21:34,979 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 13:21:35,497 DEBUG   SenderThread:31579 [sender.py:send():302] send: telemetry
+2024-03-01 13:21:35,667 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:35,667 DEBUG   SenderThread:31579 [sender.py:send():302] send: exit
+2024-03-01 13:21:35,667 INFO    SenderThread:31579 [sender.py:send_exit():438] handling exit code: 0
+2024-03-01 13:21:35,667 INFO    SenderThread:31579 [sender.py:send_exit():440] handling runtime: 2
+2024-03-01 13:21:35,668 INFO    SenderThread:31579 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 13:21:35,668 INFO    SenderThread:31579 [sender.py:send_exit():446] send defer
+2024-03-01 13:21:35,668 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:35,668 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:35,669 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 0
+2024-03-01 13:21:35,669 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:35,669 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 0
+2024-03-01 13:21:35,669 INFO    SenderThread:31579 [sender.py:transition_state():459] send defer: 1
+2024-03-01 13:21:35,669 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:35,669 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 1
+2024-03-01 13:21:35,780 INFO    Thread-12 :31579 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/conda-environment.yaml
+2024-03-01 13:21:35,780 INFO    Thread-12 :31579 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/wandb-summary.json
+2024-03-01 13:21:35,780 INFO    Thread-12 :31579 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/output.log
+2024-03-01 13:21:35,780 INFO    Thread-12 :31579 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/wandb-metadata.json
+2024-03-01 13:21:35,936 INFO    Thread-16 :31579 [upload_job.py:push():138] Uploaded file /var/folders/yj/l06f44ld41527cq9fqd03wxw0000gn/T/tmpdmb7ncllwandb/354l7qoc-wandb-metadata.json
+2024-03-01 13:21:36,561 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:36,561 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:36,561 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 1
+2024-03-01 13:21:36,561 INFO    SenderThread:31579 [sender.py:transition_state():459] send defer: 2
+2024-03-01 13:21:36,561 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:36,561 DEBUG   SenderThread:31579 [sender.py:send():302] send: stats
+2024-03-01 13:21:36,562 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:36,562 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 2
+2024-03-01 13:21:36,562 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:36,562 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 2
+2024-03-01 13:21:36,562 INFO    SenderThread:31579 [sender.py:transition_state():459] send defer: 3
+2024-03-01 13:21:36,562 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:36,562 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 3
+2024-03-01 13:21:36,562 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:36,562 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 3
+2024-03-01 13:21:36,562 INFO    SenderThread:31579 [sender.py:transition_state():459] send defer: 4
+2024-03-01 13:21:36,562 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:36,562 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 4
+2024-03-01 13:21:36,563 DEBUG   SenderThread:31579 [sender.py:send():302] send: summary
+2024-03-01 13:21:36,563 INFO    SenderThread:31579 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 13:21:36,563 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:36,563 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 4
+2024-03-01 13:21:36,563 INFO    SenderThread:31579 [sender.py:transition_state():459] send defer: 5
+2024-03-01 13:21:36,563 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:36,563 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 5
+2024-03-01 13:21:36,563 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:36,563 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 5
+2024-03-01 13:21:36,666 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:36,783 INFO    Thread-12 :31579 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/wandb-summary.json
+2024-03-01 13:21:36,911 INFO    SenderThread:31579 [sender.py:transition_state():459] send defer: 6
+2024-03-01 13:21:36,911 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:36,911 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:36,911 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 6
+2024-03-01 13:21:36,911 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:36,912 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 6
+2024-03-01 13:21:37,017 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:37,667 INFO    SenderThread:31579 [sender.py:transition_state():459] send defer: 7
+2024-03-01 13:21:37,667 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:37,667 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:37,668 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 7
+2024-03-01 13:21:37,668 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:37,668 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 7
+2024-03-01 13:21:37,668 INFO    SenderThread:31579 [dir_watcher.py:finish():362] shutting down directory watcher
+2024-03-01 13:21:37,774 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:37,789 INFO    SenderThread:31579 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/output.log
+2024-03-01 13:21:37,790 INFO    SenderThread:31579 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/config.yaml
+2024-03-01 13:21:37,790 INFO    SenderThread:31579 [dir_watcher.py:finish():392] scan: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files
+2024-03-01 13:21:37,790 INFO    SenderThread:31579 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/requirements.txt requirements.txt
+2024-03-01 13:21:37,791 INFO    SenderThread:31579 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/output.log output.log
+2024-03-01 13:21:37,795 INFO    SenderThread:31579 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/config.yaml config.yaml
+2024-03-01 13:21:37,797 INFO    SenderThread:31579 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/wandb-summary.json wandb-summary.json
+2024-03-01 13:21:37,800 INFO    SenderThread:31579 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/conda-environment.yaml conda-environment.yaml
+2024-03-01 13:21:37,802 INFO    SenderThread:31579 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/wandb-metadata.json wandb-metadata.json
+2024-03-01 13:21:37,802 INFO    SenderThread:31579 [sender.py:transition_state():459] send defer: 8
+2024-03-01 13:21:37,802 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:37,805 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:37,805 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 8
+2024-03-01 13:21:37,806 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:37,806 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 8
+2024-03-01 13:21:37,806 INFO    SenderThread:31579 [file_pusher.py:finish():171] shutting down file pusher
+2024-03-01 13:21:37,911 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:37,911 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:38,017 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:38,017 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:38,123 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:38,124 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:38,226 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:38,227 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:38,329 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:38,329 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:38,435 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:38,435 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:38,541 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:38,541 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:38,643 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:38,643 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:38,750 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:38,750 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:38,803 INFO    Thread-17 :31579 [upload_job.py:push():138] Uploaded file /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/requirements.txt
+2024-03-01 13:21:38,805 INFO    Thread-18 :31579 [upload_job.py:push():138] Uploaded file /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/output.log
+2024-03-01 13:21:38,805 INFO    Thread-20 :31579 [upload_job.py:push():138] Uploaded file /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/wandb-summary.json
+2024-03-01 13:21:38,805 INFO    Thread-21 :31579 [upload_job.py:push():138] Uploaded file /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/conda-environment.yaml
+2024-03-01 13:21:38,858 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:38,859 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:38,966 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:38,966 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:38,988 INFO    Thread-19 :31579 [upload_job.py:push():138] Uploaded file /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/files/config.yaml
+2024-03-01 13:21:39,074 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:39,075 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:39,182 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:39,183 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:39,194 INFO    Thread-11 :31579 [sender.py:transition_state():459] send defer: 9
+2024-03-01 13:21:39,194 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:39,195 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 9
+2024-03-01 13:21:39,195 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:39,195 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 9
+2024-03-01 13:21:39,288 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:39,399 INFO    SenderThread:31579 [sender.py:transition_state():459] send defer: 10
+2024-03-01 13:21:39,399 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:39,400 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:39,401 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 10
+2024-03-01 13:21:39,401 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:39,402 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 10
+2024-03-01 13:21:39,402 INFO    SenderThread:31579 [sender.py:transition_state():459] send defer: 11
+2024-03-01 13:21:39,403 DEBUG   SenderThread:31579 [sender.py:send():302] send: final
+2024-03-01 13:21:39,403 DEBUG   SenderThread:31579 [sender.py:send():302] send: footer
+2024-03-01 13:21:39,403 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 13:21:39,403 INFO    HandlerThread:31579 [handler.py:handle_request_defer():164] handle defer: 11
+2024-03-01 13:21:39,403 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: defer
+2024-03-01 13:21:39,403 INFO    SenderThread:31579 [sender.py:send_request_defer():455] handle sender defer: 11
+2024-03-01 13:21:39,504 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 13:21:39,504 DEBUG   SenderThread:31579 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 13:21:39,505 INFO    SenderThread:31579 [file_pusher.py:join():176] waiting for file pusher
+2024-03-01 13:21:40,219 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: sampled_history
+2024-03-01 13:21:40,220 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: get_summary
+2024-03-01 13:21:40,220 INFO    MainThread:31579 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2024-03-01 13:21:40,221 INFO    MainThread:31579 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2024-03-01 13:21:40,221 INFO    MainThread:31579 [wandb_run.py:_footer_sync_info():3261] logging synced files
+2024-03-01 13:21:40,222 DEBUG   HandlerThread:31579 [handler.py:handle_request():141] handle_request: shutdown
+2024-03-01 13:21:40,222 INFO    HandlerThread:31579 [handler.py:finish():810] shutting down handler
+2024-03-01 13:21:40,408 INFO    WriterThread:31579 [datastore.py:close():279] close: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/ego_networks_node_clf/wandb/run-20240301_132131-2r1y58sf/run-2r1y58sf.wandb
+2024-03-01 13:21:41,112 INFO    SenderThread:31579 [sender.py:finish():1312] shutting down sender
+2024-03-01 13:21:41,112 INFO    SenderThread:31579 [file_pusher.py:finish():171] shutting down file pusher
+2024-03-01 13:21:41,112 INFO    SenderThread:31579 [file_pusher.py:join():176] waiting for file pusher
+2024-03-01 13:21:41,507 INFO    MainThread:31579 [internal.py:handle_exit():80] Internal process exited

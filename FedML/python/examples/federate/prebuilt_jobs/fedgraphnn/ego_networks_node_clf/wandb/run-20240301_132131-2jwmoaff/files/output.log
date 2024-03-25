@@ -1,0 +1,13 @@
+[FedML-Client @device-id-0] [Fri, 01 Mar 2024 05:21:36] [INFO] [__init__.py:160:init] args.rank = 1, args.process_id = 1, args.worker_num = 2
+[FedML-Client @device-id-0] [Fri, 01 Mar 2024 05:21:36] [INFO] [gpu_mapping_mpi.py:24:mapping_processes_to_gpu_device_from_yaml_file_mpi] gpu_util = {'host1': [0, 2, 2, 1, 1, 1, 1, 3]}
+[FedML-Client @device-id-0] [Fri, 01 Mar 2024 05:21:36] [INFO] [gpu_mapping_mpi.py:32:mapping_processes_to_gpu_device_from_yaml_file_mpi] Process 1 running on host: host1, gethostname: doujiaxingdeMacBook-Air.local, local_gpu_id: 1 ...
+[FedML-Client @device-id-0] [Fri, 01 Mar 2024 05:21:36] [INFO] [gpu_mapping_mpi.py:36:mapping_processes_to_gpu_device_from_yaml_file_mpi] i = 11, worker_number = 2
+[FedML-Client @device-id-0] [Fri, 01 Mar 2024 05:21:36] [ERROR] [mlops_runtime_log.py:61:handle_exception] Uncaught exception
+Traceback (most recent call last):
+  File "fedml_ego_networks_node_clf.py", line 93, in <module>
+    device = fedml.device.get_device(args)
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/fedml/device/device.py", line 61, in get_device
+    device = mapping_processes_to_gpu_device_from_yaml_file_mpi(
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/fedml/device/gpu_mapping_mpi.py", line 37, in mapping_processes_to_gpu_device_from_yaml_file_mpi
+    assert i == worker_number
+AssertionError

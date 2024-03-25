@@ -1,0 +1,893 @@
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [__init__.py:160:init] args.rank = 0, args.process_id = 0, args.worker_num = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [gpu_mapping_mpi.py:13:mapping_processes_to_gpu_device_from_yaml_file_mpi]  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [gpu_mapping_mpi.py:14:mapping_processes_to_gpu_device_from_yaml_file_mpi]  ################## You do not indicate gpu_util_file, will use CPU training  #################
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [ml_engine_adapter.py:147:get_torch_device] args = <fedml.arguments.Arguments object at 0x100cf0fa0>, using_gpu = False, device_id = None, device_type = cpu
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [gpu_mapping_mpi.py:16:mapping_processes_to_gpu_device_from_yaml_file_mpi] cpu
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [device.py:68:get_device] device = cpu
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [fedml_moleculenet_property_prediction.py:34:load_data] load_data. dataset_name = clintox
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [data_loader.py:381:load_partition_data] Client idx = 0, local sample number = 296
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [data_loader.py:381:load_partition_data] Client idx = 1, local sample number = 296
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [data_loader.py:381:load_partition_data] Client idx = 2, local sample number = 295
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [data_loader.py:381:load_partition_data] Client idx = 3, local sample number = 295
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [fedml_moleculenet_property_prediction.py:83:create_model] create_model. model_name = gcn, output_dim = None
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [contribution_assessor_manager.py:16:_build_assessor] contribution_alg is not set, assessor is None
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:44] [INFO] [fedml_moleculenet_property_prediction.py:126:create_model] done
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:45] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:45] [INFO] [fedml_comm_manager.py:27:run] running
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:45] [INFO] [fedml_comm_manager.py:37:receive_message] communication backend is alive (loop_forever, sender 0 to receiver 0)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:45] [WARNING] [com_manager.py:137:_notify_connection_ready] Cannot handle connection ready.
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.5944204037007432
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.5944204037007432
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.5944204037007432
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.5944204037007432
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.5944204037007432
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:46] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.6530070835974753
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.6530070835974753
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.6530070835974753
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.6530070835974753
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.6530070835974753
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:48] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.6919737603704419
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.6919737603704419
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.6919737603704419
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.6919737603704419
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.6919737603704419
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:50] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:51] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:51] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:51] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:51] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:51] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:51] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:51] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:51] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:51] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.8556315059305605
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:51] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.8556315059305605
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.8556315059305605
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.8556315059305605
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.8556315059305605
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:52] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.8844574295085581
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.8844574295085581
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.8844574295085581
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.8844574295085581
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.8844574295085581
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:53] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.8999361465597235
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.8999361465597235
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.8999361465597235
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.8999361465597235
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.8999361465597235
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:55] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9010386520033442
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9010386520033442
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9010386520033442
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9010386520033442
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9010386520033442
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:57] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9180838455389873
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9180838455389873
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9180838455389873
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9180838455389873
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9180838455389873
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:55:58] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9175808274303354
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9175808274303354
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9175808274303354
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9175808274303354
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9175808274303354
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:00] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9048308113521311
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9048308113521311
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9048308113521311
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9048308113521311
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9048308113521311
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:02] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:03] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:03] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:03] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:03] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:03] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:03] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:03] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:03] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9053338294607829
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9053338294607829
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9053338294607829
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9053338294607829
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9053338294607829
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:04] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9053338294607829
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9053338294607829
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9053338294607829
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9053338294607829
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9053338294607829
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:05] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9086229707009178
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9086229707009178
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9086229707009178
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9086229707009178
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9086229707009178
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:07] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9121440974614812
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9121440974614812
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9121440974614812
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9121440974614812
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9121440974614812
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:09] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9068428837867386
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9068428837867386
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9068428837867386
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9068428837867386
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9068428837867386
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:11] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9094934906241099
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9094934906241099
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9094934906241099
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9094934906241099
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9094934906241099
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:13] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:14] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:14] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:14] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:14] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:14] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:14] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:14] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:14] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:14] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9063398656780868
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:14] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9063398656780868
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9063398656780868
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9063398656780868
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9063398656780868
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:15] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9074814181895023
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9074814181895023
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9074814181895023
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9074814181895023
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9074814181895023
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:16] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.905333829460783
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.905333829460783
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.905333829460783
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.905333829460783
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.905333829460783
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:18] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:20] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.8945568387493914
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.8945568387493914
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:21] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.8945568387493914
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.8945568387493914
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.8945568387493914
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:22] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:23] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:25] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:27] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:28] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:28] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:28] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:28] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:28] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:28] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:28] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:28] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:28] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:28] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:29] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:30] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9074814181895023
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9074814181895023
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9074814181895023
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9074814181895023
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9074814181895023
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:32] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9064753819721985
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:34] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:35] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:35] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:35] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:35] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:35] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:35] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:35] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:35] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:35] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9059723638635466
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:35] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9059723638635466
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9059723638635466
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9059723638635466
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9059723638635466
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:36] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9069784000808505
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:37] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 0, Test ROC-AUC score = 0.9004001176005807
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 1, Test ROC-AUC score = 0.9004001176005807
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 2, Test ROC-AUC score = 0.9004001176005807
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:60:_test] ----------test--------
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:57:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:36:test_all] Client 3, Test ROC-AUC score = 0.9004001176005807
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [gcn_readout_aggregator.py:40:test_all] Test ROC-AUC Score = 0.9004001176005807
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:39] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:41] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:41] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:41] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:41] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:41] [INFO] [gcn_readout_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:41] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Fri, 01 Mar 2024 13:56:41] [INFO] [gcn_readout_aggregator.py:26:test_all] ----------test_on_the_server--------

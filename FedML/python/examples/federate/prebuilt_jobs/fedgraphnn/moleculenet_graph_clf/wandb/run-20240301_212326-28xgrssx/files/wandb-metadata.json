@@ -1,0 +1,25 @@
+{
+    "os": "macOS-14.0-arm64-arm-64bit",
+    "python": "3.8.18",
+    "heartbeatAt": "2024-03-01T13:23:27.825293",
+    "startedAt": "2024-03-01T13:23:26.957477",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--cf",
+        "config_fedavg/simulation_gcn/fedml_config.yaml"
+    ],
+    "state": "running",
+    "program": "fedml_moleculenet_property_prediction.py",
+    "codePath": "python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/fedml_moleculenet_property_prediction.py",
+    "git": {
+        "remote": "https://github.com/FedML-AI/FedML.git",
+        "commit": "22f655a2aa88f6ca2fe1370642da8cad135af18f"
+    },
+    "email": "du1125538821@gmail.com",
+    "root": "/Users/dujiaxing/FedML",
+    "host": "doujiaxingdeMacBook-Air.local",
+    "username": "dujiaxing",
+    "executable": "/Users/dujiaxing/anaconda3/envs/fedgnn/bin/python"
+}

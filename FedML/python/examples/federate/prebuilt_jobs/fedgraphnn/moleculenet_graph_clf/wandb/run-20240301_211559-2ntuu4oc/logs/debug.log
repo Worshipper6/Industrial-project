@@ -1,0 +1,26 @@
+2024-03-01 21:15:59,343 INFO    MainThread:8989 [wandb_setup.py:_flush():76] Configure stats pid to 8989
+2024-03-01 21:15:59,343 INFO    MainThread:8989 [wandb_setup.py:_flush():76] Loading settings from /Users/dujiaxing/.config/wandb/settings
+2024-03-01 21:15:59,343 INFO    MainThread:8989 [wandb_setup.py:_flush():76] Loading settings from /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/settings
+2024-03-01 21:15:59,344 INFO    MainThread:8989 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True'}
+2024-03-01 21:15:59,344 INFO    MainThread:8989 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/fedml_moleculenet_property_prediction.py', 'program': 'fedml_moleculenet_property_prediction.py'}
+2024-03-01 21:15:59,344 INFO    MainThread:8989 [wandb_init.py:_log_setup():461] Logging user logs to /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_211559-2ntuu4oc/logs/debug.log
+2024-03-01 21:15:59,344 INFO    MainThread:8989 [wandb_init.py:_log_setup():462] Logging internal logs to /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_211559-2ntuu4oc/logs/debug-internal.log
+2024-03-01 21:15:59,344 INFO    MainThread:8989 [wandb_init.py:init():495] calling init triggers
+2024-03-01 21:15:59,344 INFO    MainThread:8989 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {'yaml_config_file': 'config_fedavg/simulation_sage/fedml_config.yaml', 'run_id': '0', 'rank': 1, 'local_rank': 0, 'node_rank': 0, 'role': 'client', 'run_device_id': '0', 'using_mlops': False, 'yaml_paths': ['config_fedavg/simulation_sage/fedml_config.yaml'], 'training_type': 'simulation', 'random_seed': 0, 'dataset': 'bace', 'data_cache_dir': '/Users/dujiaxing/fedgraphnn_data/', 'partition_method': 'homo', 'partition_alpha': 0.5, 'model': 'graphsage', 'hidden_size': 32, 'node_embedding_dim': 32, 'graph_embedding_dim': 64, 'readout_hidden_dim': 64, 'alpha': 0.2, 'num_heads': 2, 'dropout': 0.3, 'normalize_features': False, 'normalize_adjacency': False, 'sparse_adjacency': False, 'federated_optimizer': 'FedAvg', 'client_id_list': '[]', 'client_num_in_total': 4, 'client_num_per_round': 4, 'comm_round': 100, 'epochs': 5, 'batch_size': 64, 'client_optimizer': 'adam', 'learning_rate': 0.0015, 'weight_decay': 0.001, 'metric': 'roc-auc', 'frequency_of_the_test': 5, 'worker_num': 2, 'using_gpu': False, 'gpu_mapping_file': 'config_fedavg/gpu_mapping.yaml', 'gpu_mapping_key': 'mapping_default', 'backend': 'MPI', 'is_mobile': 0, 'log_file_dir': './log', 'enable_wandb': True, 'wandb_project': 'BACE', 'run_name': 'fed_sage', 'comm': <mpi4py.MPI.Intracomm object at 0x177fb8c90>, 'process_id': 1, 'sys_perf_profiling': True}
+2024-03-01 21:15:59,344 INFO    MainThread:8989 [wandb_init.py:init():548] starting backend
+2024-03-01 21:15:59,344 INFO    MainThread:8989 [wandb_init.py:init():552] setting up manager
+2024-03-01 21:15:59,353 INFO    MainThread:8989 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-03-01 21:15:59,354 INFO    MainThread:8989 [wandb_init.py:init():558] backend started and connected
+2024-03-01 21:15:59,362 INFO    MainThread:8989 [wandb_init.py:init():636] updated telemetry
+2024-03-01 21:15:59,396 INFO    MainThread:8989 [wandb_init.py:init():667] communicating run to backend with 30 second timeout
+2024-03-01 21:15:59,998 INFO    MainThread:8989 [wandb_run.py:_on_init():1982] communicating current version
+2024-03-01 21:16:00,061 INFO    MainThread:8989 [wandb_run.py:_on_init():1986] got version response upgrade_message: "wandb version 0.16.3 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-01 21:16:00,062 INFO    MainThread:8989 [wandb_init.py:init():700] starting run threads in backend
+2024-03-01 21:16:02,029 INFO    MainThread:8989 [wandb_run.py:_console_start():1962] atexit reg
+2024-03-01 21:16:02,029 INFO    MainThread:8989 [wandb_run.py:_redirect():1820] redirect: SettingsConsole.WRAP_RAW
+2024-03-01 21:16:02,030 INFO    MainThread:8989 [wandb_run.py:_redirect():1885] Wrapping output streams.
+2024-03-01 21:16:02,030 INFO    MainThread:8989 [wandb_run.py:_redirect():1907] Redirects installed.
+2024-03-01 21:16:02,030 INFO    MainThread:8989 [wandb_init.py:init():732] run started, returning control to user process
+2024-03-01 21:18:44,879 WARNING MsgRouterThr:8989 [router.py:message_loop():76] message_loop has been closed

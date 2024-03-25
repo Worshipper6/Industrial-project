@@ -1,0 +1,558 @@
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:05] [INFO] [__init__.py:160:init] args.rank = 0, args.process_id = 0, args.worker_num = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:05] [INFO] [gpu_mapping_mpi.py:13:mapping_processes_to_gpu_device_from_yaml_file_mpi]  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:05] [INFO] [gpu_mapping_mpi.py:14:mapping_processes_to_gpu_device_from_yaml_file_mpi]  ################## You do not indicate gpu_util_file, will use CPU training  #################
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:05] [INFO] [ml_engine_adapter.py:147:get_torch_device] args = <fedml.arguments.Arguments object at 0x104ce8fa0>, using_gpu = False, device_id = None, device_type = cpu
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:05] [INFO] [gpu_mapping_mpi.py:16:mapping_processes_to_gpu_device_from_yaml_file_mpi] cpu
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:05] [INFO] [device.py:68:get_device] device = cpu
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:05] [INFO] [data_loader.py:219:create_category_split] reading data
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:05] [INFO] [data_loader.py:172:get_data_category] read mapping
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:05] [INFO] [data_loader.py:176:get_data_category] build networkx graph
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:07] [INFO] [data_loader.py:179:get_data_category] get partion
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:08] [INFO] [data_loader.py:182:get_data_category] subgraphing
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:27] [INFO] [data_loader.py:185:get_data_category] check client num is smaller than subgraphs number, which is 27
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:27] [INFO] [data_loader.py:150:combine_category] combining subgraphs for 0 client
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:27] [INFO] [data_loader.py:153:combine_category] combined 2 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:29] [INFO] [data_loader.py:153:combine_category] combined 3 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:32] [INFO] [data_loader.py:153:combine_category] combined 4 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:44] [INFO] [data_loader.py:153:combine_category] combined 5 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:48] [INFO] [data_loader.py:153:combine_category] combined 6 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:51] [INFO] [data_loader.py:153:combine_category] combined 7 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:52] [INFO] [data_loader.py:150:combine_category] combining subgraphs for 1 client
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:52] [INFO] [data_loader.py:153:combine_category] combined 2 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:57:59] [INFO] [data_loader.py:153:combine_category] combined 3 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:04] [INFO] [data_loader.py:153:combine_category] combined 4 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:06] [INFO] [data_loader.py:153:combine_category] combined 5 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:07] [INFO] [data_loader.py:153:combine_category] combined 6 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:10] [INFO] [data_loader.py:153:combine_category] combined 7 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:11] [INFO] [data_loader.py:150:combine_category] combining subgraphs for 2 client
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:11] [INFO] [data_loader.py:153:combine_category] combined 2 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:11] [INFO] [data_loader.py:153:combine_category] combined 3 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:11] [INFO] [data_loader.py:153:combine_category] combined 4 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:11] [INFO] [data_loader.py:153:combine_category] combined 5 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:11] [INFO] [data_loader.py:153:combine_category] combined 6 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:12] [INFO] [data_loader.py:153:combine_category] combined 7 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:15] [INFO] [data_loader.py:150:combine_category] combining subgraphs for 3 client
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:15] [INFO] [data_loader.py:153:combine_category] combined 2 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:15] [INFO] [data_loader.py:153:combine_category] combined 3 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:16] [INFO] [data_loader.py:153:combine_category] combined 4 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:18] [INFO] [data_loader.py:153:combine_category] combined 5 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:19] [INFO] [data_loader.py:153:combine_category] combined 6 subgraphs
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:19] [INFO] [data_loader.py:195:get_data_category] converting to node degree
+/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch_geometric/data/storage.py:450: UserWarning: Unable to accurately infer 'num_nodes' from the attribute set '{'edge_label', 'index_orig', 'edge_index'}'. Please explicitly set 'num_nodes' as an attribute of 'data' to suppress this warning
+  warnings.warn(
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:29] [INFO] [data_loader.py:198:get_data_category] spliting into trian val and test
+/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:30] [INFO] [data_loader.py:266:load_partition_data] Client idx = 0, local sample number = 10
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:30] [INFO] [data_loader.py:266:load_partition_data] Client idx = 1, local sample number = 10
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:30] [INFO] [data_loader.py:266:load_partition_data] Client idx = 2, local sample number = 10
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:30] [INFO] [data_loader.py:266:load_partition_data] Client idx = 3, local sample number = 10
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:30] [INFO] [fedml_subgraph_link_prediction.py:53:create_model] create_model. model_name = sage
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:30] [INFO] [contribution_assessor_manager.py:16:_build_assessor] contribution_alg is not set, assessor is None
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:30] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:30] [INFO] [fedml_comm_manager.py:27:run] running
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:30] [INFO] [fedml_comm_manager.py:37:receive_message] communication backend is alive (loop_forever, sender 0 to receiver 0)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:30] [WARNING] [com_manager.py:137:_notify_connection_ready] Cannot handle connection ready.
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:48] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:48] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:48] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:48] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:48] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:48] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:48] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:51] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 2.1454849243164062, mae = [2.145485], rmse = [2.4177399], mse = [5.8454657]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:56] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:56] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 2.298903703689575, mae = [2.2989037], rmse = [2.6104968], mse = [6.814693]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:57] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:57] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:57] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 2.1088216304779053, mae = [2.1088216], rmse = [2.4108431], mse = [5.8121643]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:58] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:58] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:58] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:58] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 2.1631019115448, mae = [2.163102], rmse = [2.462919], mse = [6.06597]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:58] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 2.1790781021118164, mae = 2.1790781021118164, rmse = 2.4754996299743652, mse = 6.134572982788086
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:58] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:58] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:58] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:58] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:58] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:58:58] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:16] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:16] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:16] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:16] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:16] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:16] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:16] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:19] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.4392728805541992, mae = [1.4392729], rmse = [1.631508], mse = [2.6618185]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:23] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:23] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.404242992401123, mae = [1.404243], rmse = [1.6039981], mse = [2.57281]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:24] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:24] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:24] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.5538434982299805, mae = [1.5538435], rmse = [1.73266], mse = [3.0021107]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:25] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:25] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:25] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:25] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.4742647409439087, mae = [1.4742647], rmse = [1.6768628], mse = [2.8118691]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:25] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.4679059982299805, mae = 1.4679059982299805, rmse = 1.661257266998291, mse = 2.7621521949768066
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:25] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:25] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:25] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:25] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:25] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:25] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:43] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:43] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:43] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:43] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:43] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:43] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:43] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:46] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.751805305480957, mae = [1.7518053], rmse = [1.9288805], mse = [3.7205799]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:51] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:51] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.6780269145965576, mae = [1.6780269], rmse = [1.8682476], mse = [3.4903493]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:51] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:51] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:51] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.8515616655349731, mae = [1.8515617], rmse = [2.0187216], mse = [4.0752373]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:52] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:52] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:52] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:52] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.760586142539978, mae = [1.7605861], rmse = [1.9475536], mse = [3.7929652]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:52] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.7604950666427612, mae = 1.7604950666427612, rmse = 1.940850853919983, mse = 3.769782781600952
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:52] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:52] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:52] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:52] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:52] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 13:59:52] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:11] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:11] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:11] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:11] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:11] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:11] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:11] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:13] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.2045739889144897, mae = [1.204574], rmse = [1.3961952], mse = [1.9493608]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:18] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:18] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.2178727388381958, mae = [1.2178727], rmse = [1.4141808], mse = [1.9999073]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:18] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:18] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:18] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.311612606048584, mae = [1.3116126], rmse = [1.5024338], mse = [2.2573073]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:20] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:20] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:20] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:20] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.2574641704559326, mae = [1.2574642], rmse = [1.4649314], mse = [2.146024]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:20] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.2478809356689453, mae = 1.2478809356689453, rmse = 1.4444353580474854, mse = 2.0881497859954834
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:20] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:20] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:20] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:20] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:20] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:20] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:37] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:37] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:37] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:37] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:37] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:37] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:37] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:40] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 2.006537675857544, mae = [2.0065377], rmse = [2.185148], mse = [4.7748713]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:44] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:44] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.9051625728607178, mae = [1.9051626], rmse = [2.1064951], mse = [4.437322]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:45] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:45] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:45] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 2.089911699295044, mae = [2.0899117], rmse = [2.2651615], mse = [5.130956]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:46] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:46] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:46] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:46] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.9922970533370972, mae = [1.992297], rmse = [2.1843185], mse = [4.771248]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:46] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.9984772205352783, mae = 1.9984772205352783, rmse = 2.1852807998657227, mse = 4.778599262237549
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:46] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:46] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:46] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:46] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:46] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:00:46] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:04] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:04] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:04] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:04] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:04] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:04] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:04] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:07] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.4952435493469238, mae = [1.4952435], rmse = [1.6875427], mse = [2.8478003]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:12] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:12] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.448038935661316, mae = [1.4480389], rmse = [1.6506386], mse = [2.7246077]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:12] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:12] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:12] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.6076667308807373, mae = [1.6076667], rmse = [1.7826544], mse = [3.1778567]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:13] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:13] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:13] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:13] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.520980954170227, mae = [1.520981], rmse = [1.7202436], mse = [2.959238]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:13] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.5179824829101562, mae = 1.5179824829101562, rmse = 1.710269808769226, mse = 2.927375555038452
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:13] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:13] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:13] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:13] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:13] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:13] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:31] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:31] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:31] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:31] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:31] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:31] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:31] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:34] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.4799823760986328, mae = [1.4799824], rmse = [1.672739], mse = [2.798056]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:39] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:39] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.434183955192566, mae = [1.434184], rmse = [1.637376], mse = [2.681]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:39] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:39] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:39] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.5925884246826172, mae = [1.5925884], rmse = [1.7674934], mse = [3.1240327]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:40] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:40] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:40] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:40] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.5058180093765259, mae = [1.505818], rmse = [1.7052549], mse = [2.9078941]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:40] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.5031431913375854, mae = 1.5031431913375854, rmse = 1.6957157850265503, mse = 2.8777456283569336
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:40] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:40] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:40] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:40] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:40] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:40] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:59] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:59] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:59] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:59] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:59] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:59] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:01:59] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:01] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.3657612800598145, mae = [1.3657613], rmse = [1.5419679], mse = [2.3776648]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:06] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:06] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.342839241027832, mae = [1.3428392], rmse = [1.52545], mse = [2.3269978]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:06] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:06] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:06] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.4749165773391724, mae = [1.4749166], rmse = [1.6401424], mse = [2.6900673]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:08] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:08] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:08] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:08] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.399365782737732, mae = [1.3993658], rmse = [1.5854685], mse = [2.5137105]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:08] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.3957207202911377, mae = 1.3957207202911377, rmse = 1.5732572078704834, mse = 2.477109909057617
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:08] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:08] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:08] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:08] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:08] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:08] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:25] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:25] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:25] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:25] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:25] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:25] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:25] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:28] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.4666675329208374, mae = [1.4666675], rmse = [1.6567137], mse = [2.7447004]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:33] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:33] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.4220590591430664, mae = [1.422059], rmse = [1.622694], mse = [2.633136]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:33] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:33] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:33] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.578282117843628, mae = [1.5782821], rmse = [1.7501979], mse = [3.0631926]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:35] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:35] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:35] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:35] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.490913987159729, mae = [1.490914], rmse = [1.6874605], mse = [2.847523]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:35] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.4894806146621704, mae = 1.4894806146621704, rmse = 1.6792665719985962, mse = 2.8221378326416016
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:35] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:35] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:35] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:35] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:35] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:35] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:53] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:53] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:53] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:53] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:53] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:53] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:53] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:02:55] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.3392302989959717, mae = [1.3392303], rmse = [1.510336], mse = [2.281115]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:00] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:00] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.3210786581039429, mae = [1.3210787], rmse = [1.4983296], mse = [2.2449918]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:01] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:01] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:01] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.4466590881347656, mae = [1.4466591], rmse = [1.6077389], mse = [2.584824]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:02] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:02] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:02] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:02] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.3732020854949951, mae = [1.3732021], rmse = [1.5539292], mse = [2.414696]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:02] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.3700425624847412, mae = 1.3700425624847412, rmse = 1.5425834655761719, mse = 2.381406784057617
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:02] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:02] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:02] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:02] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:02] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:02] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:20] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:20] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:20] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:20] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:20] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:20] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:20] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:23] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.5008965730667114, mae = [1.5008966], rmse = [1.6856759], mse = [2.841503]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:27] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:27] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.4520355463027954, mae = [1.4520355], rmse = [1.6474671], mse = [2.714148]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:28] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:28] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:28] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.6096000671386719, mae = [1.6096001], rmse = [1.7768267], mse = [3.157113]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:29] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:29] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:29] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:29] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.5207087993621826, mae = [1.5207088], rmse = [1.7114522], mse = [2.9290688]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:29] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.5208103656768799, mae = 1.5208103656768799, rmse = 1.7053554058074951, mse = 2.9104580879211426
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:29] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:29] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:29] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:29] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:29] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:29] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:47] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:47] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:47] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:47] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:47] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:47] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:47] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:49] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.2101727724075317, mae = [1.2101728], rmse = [1.3816124], mse = [1.9088529]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:54] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:54] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.2186152935028076, mae = [1.2186153], rmse = [1.3962554], mse = [1.9495289]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:54] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:54] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:54] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.3134459257125854, mae = [1.3134459], rmse = [1.4810023], mse = [2.193368]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:55] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:55] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:55] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:55] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.2541483640670776, mae = [1.2541484], rmse = [1.4377209], mse = [2.0670414]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:55] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.2490956783294678, mae = 1.2490956783294678, rmse = 1.4241477251052856, mse = 2.029697895050049
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:55] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:55] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:55] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:55] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:55] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:03:55] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:13] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:13] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:13] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:13] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:13] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:13] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:13] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:16] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.771007776260376, mae = [1.7710078], rmse = [1.9388968], mse = [3.7593205]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:21] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:21] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.6931177377700806, mae = [1.6931177], rmse = [1.8756391], mse = [3.518022]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:21] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:21] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:21] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.8630839586257935, mae = [1.863084], rmse = [2.0207188], mse = [4.083305]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:23] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:23] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:23] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:23] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.7676249742507935, mae = [1.767625], rmse = [1.9436053], mse = [3.7776015]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:23] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.7737085819244385, mae = 1.7737085819244385, rmse = 1.9447150230407715, mse = 3.784562110900879
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:23] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:23] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:23] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:23] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:23] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:23] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:42] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:42] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:42] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:42] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:42] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:42] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:42] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:45] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.3012781143188477, mae = [1.3012781], rmse = [1.4654931], mse = [2.14767]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:50] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:50] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.2897156476974487, mae = [1.2897156], rmse = [1.4601187], mse = [2.1319466]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:50] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:50] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:50] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.4061750173568726, mae = [1.406175], rmse = [1.5612886], mse = [2.437622]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:51] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:51] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:51] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:51] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.3353683948516846, mae = [1.3353684], rmse = [1.5085844], mse = [2.2758267]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:51] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.333134412765503, mae = 1.333134412765503, rmse = 1.4988712072372437, mse = 2.2482662200927734
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:51] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:51] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:51] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:51] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:51] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:04:51] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:11] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:11] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:11] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:11] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:11] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:11] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:11] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:14] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.458472728729248, mae = [1.4584727], rmse = [1.6427145], mse = [2.698511]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:19] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:19] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.41386079788208, mae = [1.4138608], rmse = [1.6089368], mse = [2.5886774]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:19] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:19] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:19] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.567384958267212, mae = [1.567385], rmse = [1.7326714], mse = [3.0021503]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:21] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:21] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:21] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:21] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.4788470268249512, mae = [1.478847], rmse = [1.6676779], mse = [2.7811496]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:21] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.479641318321228, mae = 1.479641318321228, rmse = 1.6630001068115234, mse = 2.767622232437134
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:21] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:21] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:21] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:21] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:21] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:21] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:39] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:39] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:39] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:39] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:39] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:39] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:39] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:42] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.180787205696106, mae = [1.1807872], rmse = [1.3502775], mse = [1.8232496]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:46] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:46] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.1940706968307495, mae = [1.1940707], rmse = [1.3708451], mse = [1.8792162]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:46] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:46] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:46] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.28184175491333, mae = [1.2818418], rmse = [1.447677], mse = [2.0957687]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:48] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:48] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:48] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:48] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.2242679595947266, mae = [1.224268], rmse = [1.4054401], mse = [1.9752618]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:48] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.220241904258728, mae = 1.220241904258728, rmse = 1.3935599327087402, mse = 1.9433740377426147
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:48] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:48] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:48] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:48] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:48] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:05:48] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:06] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:06] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:06] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:06] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:06] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:06] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:06] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:09] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.6650818586349487, mae = [1.6650819], rmse = [1.8326751], mse = [3.3586981]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:13] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:13] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.5977598428726196, mae = [1.5977598], rmse = [1.7778248], mse = [3.1606607]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:14] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:14] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:14] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.7610645294189453, mae = [1.7610645], rmse = [1.9153423], mse = [3.6685364]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:15] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:15] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:15] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:15] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.666595220565796, mae = [1.6665952], rmse = [1.8405162], mse = [3.3874998]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:15] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.6726253032684326, mae = 1.6726253032684326, rmse = 1.8415895700454712, mse = 3.3938486576080322
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:15] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:15] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:15] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:15] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:15] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:15] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:33] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:33] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:33] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:33] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:33] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:33] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:33] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:36] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.2323219776153564, mae = [1.232322], rmse = [1.3927815], mse = [1.9398403]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:41] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:41] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.2339692115783691, mae = [1.2339692], rmse = [1.4011698], mse = [1.9632766]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:41] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:41] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:41] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.3339194059371948, mae = [1.3339194], rmse = [1.487811], mse = [2.2135813]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:43] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:43] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:43] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:43] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.2694542407989502, mae = [1.2694542], rmse = [1.4395018], mse = [2.0721653]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:43] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.26741623878479, mae = 1.26741623878479, rmse = 1.4303159713745117, mse = 2.0472159385681152
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:43] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:43] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:43] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:43] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:43] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:06:43] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:00] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:00] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:00] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:00] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:00] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:00] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:00] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:03] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.4041272401809692, mae = [1.4041272], rmse = [1.5756068], mse = [2.4825368]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:08] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:08] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.3692145347595215, mae = [1.3692145], rmse = [1.5498713], mse = [2.402101]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:09] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:09] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:09] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.51010262966156, mae = [1.5101026], rmse = [1.664726], mse = [2.7713127]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:10] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:10] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:10] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:10] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.4253591299057007, mae = [1.4253591], rmse = [1.6014655], mse = [2.5646918]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:10] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.4272009134292603, mae = 1.4272009134292603, rmse = 1.5979173183441162, mse = 2.5551605224609375
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:10] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:10] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:10] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:10] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:10] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:10] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:28] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:28] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:28] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:28] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:28] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:28] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:28] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:31] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.0381277799606323, mae = [1.0381278], rmse = [1.2426099], mse = [1.5440792]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:36] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:36] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.0798332691192627, mae = [1.0798333], rmse = [1.2974019], mse = [1.6832517]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:37] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:37] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:37] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.133529782295227, mae = [1.1335298], rmse = [1.3374765], mse = [1.7888435]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:38] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:38] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:38] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:38] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.090425729751587, mae = [1.0904257], rmse = [1.3089944], mse = [1.7134663]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:38] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.0854790210723877, mae = 1.0854790210723877, rmse = 1.2966207265853882, mse = 1.6824101209640503
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:38] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:38] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:38] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:38] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:38] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:38] [INFO] [FedAvgServerManager.py:104:send_message_sync_model_to_client] send_message_sync_model_to_client. receive_id = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:56] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:56] [INFO] [FedAVGAggregator.py:56:add_local_trained_result] add_model. index = 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:56] [INFO] [FedAvgServerManager.py:60:handle_message_receive_model_from_client] b_all_received = True
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:56] [INFO] [FedAVGAggregator.py:77:aggregate] len of self.model_dict[idx] = 1
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:56] [INFO] [fed_subgraph_lp_aggregator.py:19:set_model_params] set_model_params
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:56] [INFO] [FedAVGAggregator.py:96:aggregate] aggregate time cost: 0
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:56] [INFO] [fed_subgraph_lp_aggregator.py:52:test_all] ----------test_on_the_server--------
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:07:59] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 0, Test MAE = 1.6658378839492798, mae = [1.6658379], rmse = [1.8305802], mse = [3.3510242]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:05] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:05] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 1, Test MAE = 1.59795343875885, mae = [1.5979534], rmse = [1.7753251], mse = [3.1517792]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:05] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:05] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:05] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 2, Test MAE = 1.7596086263656616, mae = [1.7596086], rmse = [1.9109243], mse = [3.6516318]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:06] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:06] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:06] [INFO] [fed_subgraph_lp_aggregator.py:110:_compare_models] Models match perfectly! :)
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:06] [INFO] [fed_subgraph_lp_aggregator.py:67:test_all] Client 3, Test MAE = 1.6641430854797363, mae = [1.6641431], rmse = [1.8345165], mse = [3.365451]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:06] [INFO] [fed_subgraph_lp_aggregator.py:82:test_all] Test MAE = 1.6718857288360596, mae = 1.6718857288360596, rmse = 1.837836503982544, mse = 3.379971504211426
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:06] [INFO] [FedAVGAggregator.py:131:client_sampling] client_indexes = [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:06] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client] indexes of clients: [0, 1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:06] [INFO] [FedAvgServerManager.py:85:handle_message_receive_model_from_client]
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:06] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client] size = 2
+[FedML-Server @device-id-0] [Sun, 03 Mar 2024 14:08:06] [INFO] [FedAvgServerManager.py:86:handle_message_receive_model_from_client]

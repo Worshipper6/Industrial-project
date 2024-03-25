@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "local.py", line 182, in <module>
+    trainer.train(dataset[2], 'cpu', args)
+  File "/Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/trainer/sage_readout_trainer.py", line 70, in train
+    test_score, _ = self.test(self.test_data, device, args)
+  File "/Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/trainer/sage_readout_trainer.py", line 98, in test
+    adj_matrix = adj_matrix.to(
+AttributeError: 'list' object has no attribute 'to'
+Traceback (most recent call last):
+  File "local.py", line 182, in <module>
+    trainer.train(dataset[2], 'cpu', args)
+  File "/Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/trainer/sage_readout_trainer.py", line 70, in train
+    test_score, _ = self.test(self.test_data, device, args)
+  File "/Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/trainer/sage_readout_trainer.py", line 98, in test
+    adj_matrix = adj_matrix.to(
+AttributeError: 'list' object has no attribute 'to'

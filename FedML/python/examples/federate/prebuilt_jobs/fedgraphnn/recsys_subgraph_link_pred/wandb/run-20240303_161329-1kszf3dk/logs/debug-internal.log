@@ -1,0 +1,121 @@
+2024-03-03 16:13:29,467 INFO    StreamThr :59752 [internal.py:wandb_internal():90] W&B internal server running at pid: 59752, started at: 2024-03-03 16:13:29.466751
+2024-03-03 16:13:29,469 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: status
+2024-03-03 16:13:29,471 DEBUG   SenderThread:59752 [sender.py:send_request():316] send_request: status
+2024-03-03 16:13:29,473 DEBUG   SenderThread:59752 [sender.py:send():302] send: header
+2024-03-03 16:13:29,473 INFO    WriterThread:59752 [datastore.py:open_for_write():75] open: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/run-1kszf3dk.wandb
+2024-03-03 16:13:29,500 DEBUG   SenderThread:59752 [sender.py:send():302] send: run
+2024-03-03 16:13:30,147 INFO    SenderThread:59752 [dir_watcher.py:__init__():216] watching files in: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files
+2024-03-03 16:13:30,147 INFO    SenderThread:59752 [sender.py:_start_run_threads():913] run started: 1kszf3dk with start time 1709453609.453585
+2024-03-03 16:13:30,154 DEBUG   SenderThread:59752 [sender.py:send():302] send: summary
+2024-03-03 16:13:30,155 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: check_version
+2024-03-03 16:13:30,155 INFO    SenderThread:59752 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-03 16:13:30,155 DEBUG   SenderThread:59752 [sender.py:send_request():316] send_request: check_version
+2024-03-03 16:13:30,236 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: run_start
+2024-03-03 16:13:30,236 DEBUG   HandlerThread:59752 [meta.py:__init__():35] meta init
+2024-03-03 16:13:30,239 DEBUG   HandlerThread:59752 [meta.py:__init__():50] meta init done
+2024-03-03 16:13:30,239 DEBUG   HandlerThread:59752 [meta.py:probe():216] probe
+2024-03-03 16:13:30,246 DEBUG   HandlerThread:59752 [meta.py:_setup_git():206] setup git
+2024-03-03 16:13:30,271 DEBUG   HandlerThread:59752 [meta.py:_setup_git():213] setup git done
+2024-03-03 16:13:30,272 DEBUG   HandlerThread:59752 [meta.py:_save_pip():54] save pip
+2024-03-03 16:13:30,273 DEBUG   HandlerThread:59752 [meta.py:_save_pip():68] save pip done
+2024-03-03 16:13:30,273 DEBUG   HandlerThread:59752 [meta.py:_save_conda():75] save conda
+2024-03-03 16:13:31,153 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/conda-environment.yaml
+2024-03-03 16:13:31,153 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/requirements.txt
+2024-03-03 16:13:31,153 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/wandb-summary.json
+2024-03-03 16:13:32,263 DEBUG   HandlerThread:59752 [meta.py:_save_conda():85] save conda done
+2024-03-03 16:13:32,263 DEBUG   HandlerThread:59752 [meta.py:probe():254] probe done
+2024-03-03 16:13:32,266 DEBUG   SenderThread:59752 [sender.py:send():302] send: telemetry
+2024-03-03 16:13:32,266 DEBUG   SenderThread:59752 [sender.py:send():302] send: files
+2024-03-03 16:13:32,266 INFO    SenderThread:59752 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2024-03-03 16:13:32,269 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-03 16:13:32,269 DEBUG   SenderThread:59752 [sender.py:send_request():316] send_request: stop_status
+2024-03-03 16:13:32,544 DEBUG   SenderThread:59752 [sender.py:send():302] send: telemetry
+2024-03-03 16:13:33,027 INFO    Thread-16 :59752 [upload_job.py:push():138] Uploaded file /var/folders/yj/l06f44ld41527cq9fqd03wxw0000gn/T/tmpc419mc8xwandb/3vt8uxe2-wandb-metadata.json
+2024-03-03 16:13:33,163 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/conda-environment.yaml
+2024-03-03 16:13:33,163 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/wandb-metadata.json
+2024-03-03 16:13:33,163 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/output.log
+2024-03-03 16:13:35,173 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/output.log
+2024-03-03 16:13:41,229 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/output.log
+2024-03-03 16:13:43,240 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/output.log
+2024-03-03 16:13:45,246 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/output.log
+2024-03-03 16:13:47,256 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/output.log
+2024-03-03 16:13:47,550 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-03 16:13:47,551 DEBUG   SenderThread:59752 [sender.py:send_request():316] send_request: stop_status
+2024-03-03 16:13:49,267 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/output.log
+2024-03-03 16:13:51,278 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/output.log
+2024-03-03 16:13:51,806 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:13:51,809 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:13:51,809 DEBUG   SenderThread:59752 [sender.py:send():302] send: history
+2024-03-03 16:13:51,811 DEBUG   SenderThread:59752 [sender.py:send():302] send: summary
+2024-03-03 16:13:51,812 INFO    SenderThread:59752 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-03 16:13:51,812 DEBUG   SenderThread:59752 [sender.py:send():302] send: history
+2024-03-03 16:13:51,812 DEBUG   SenderThread:59752 [sender.py:send():302] send: summary
+2024-03-03 16:13:51,812 INFO    SenderThread:59752 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-03 16:13:52,279 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/wandb-summary.json
+2024-03-03 16:13:53,280 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/output.log
+2024-03-03 16:13:57,218 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:13:57,221 DEBUG   SenderThread:59752 [sender.py:send():302] send: history
+2024-03-03 16:13:57,221 DEBUG   SenderThread:59752 [sender.py:send():302] send: summary
+2024-03-03 16:13:57,225 INFO    SenderThread:59752 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-03 16:13:57,391 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:13:57,392 DEBUG   SenderThread:59752 [sender.py:send():302] send: history
+2024-03-03 16:13:57,392 DEBUG   SenderThread:59752 [sender.py:send():302] send: summary
+2024-03-03 16:13:57,392 INFO    SenderThread:59752 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-03 16:13:57,454 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/wandb-summary.json
+2024-03-03 16:13:57,664 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:13:57,665 DEBUG   SenderThread:59752 [sender.py:send():302] send: history
+2024-03-03 16:13:57,665 DEBUG   SenderThread:59752 [sender.py:send():302] send: summary
+2024-03-03 16:13:57,665 INFO    SenderThread:59752 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-03 16:13:58,134 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:13:58,135 DEBUG   SenderThread:59752 [sender.py:send():302] send: history
+2024-03-03 16:13:58,135 DEBUG   SenderThread:59752 [sender.py:send():302] send: summary
+2024-03-03 16:13:58,135 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:13:58,136 INFO    SenderThread:59752 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-03 16:13:58,136 DEBUG   SenderThread:59752 [sender.py:send():302] send: history
+2024-03-03 16:13:58,136 DEBUG   SenderThread:59752 [sender.py:send():302] send: summary
+2024-03-03 16:13:58,136 INFO    SenderThread:59752 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-03 16:13:58,137 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:13:58,137 DEBUG   SenderThread:59752 [sender.py:send():302] send: history
+2024-03-03 16:13:58,137 DEBUG   SenderThread:59752 [sender.py:send():302] send: summary
+2024-03-03 16:13:58,137 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:13:58,138 INFO    SenderThread:59752 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-03 16:13:58,138 DEBUG   SenderThread:59752 [sender.py:send():302] send: history
+2024-03-03 16:13:58,138 DEBUG   SenderThread:59752 [sender.py:send():302] send: summary
+2024-03-03 16:13:58,138 INFO    SenderThread:59752 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-03 16:13:58,462 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/wandb-summary.json
+2024-03-03 16:13:59,466 INFO    Thread-12 :59752 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/files/output.log
+2024-03-03 16:14:00,458 ERROR   SenderThread:59752 [internal_api.py:execute():207] 409 response executing GraphQL.
+2024-03-03 16:14:00,465 ERROR   SenderThread:59752 [internal_api.py:execute():208] {"errors":[{"message":"run dudu_myteam/Ciao/1kszf3dk was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-03 16:14:01,881 ERROR   SenderThread:59752 [internal_api.py:execute():207] 409 response executing GraphQL.
+2024-03-03 16:14:01,881 ERROR   SenderThread:59752 [internal_api.py:execute():208] {"errors":[{"message":"run dudu_myteam/Ciao/1kszf3dk was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-03 16:14:02,940 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-03 16:14:03,283 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:14:03,451 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:14:03,746 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:14:04,154 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:14:04,155 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:14:04,158 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:14:04,158 DEBUG   HandlerThread:59752 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-03 16:14:04,697 ERROR   SenderThread:59752 [internal_api.py:execute():207] 409 response executing GraphQL.
+2024-03-03 16:14:04,697 ERROR   SenderThread:59752 [internal_api.py:execute():208] {"errors":[{"message":"run dudu_myteam/Ciao/1kszf3dk was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-03 16:14:04,698 ERROR   SenderThread:59752 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 204, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/Users/dujiaxing/anaconda3/envs/fedgnn/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+2024-03-03 16:14:10,055 ERROR   SenderThread:59752 [internal_api.py:execute():207] 409 response executing GraphQL.
+2024-03-03 16:14:10,055 ERROR   SenderThread:59752 [internal_api.py:execute():208] {"errors":[{"message":"run dudu_myteam/Ciao/1kszf3dk was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-03 16:14:10,166 INFO    HandlerThread:59752 [handler.py:finish():810] shutting down handler
+2024-03-03 16:14:10,188 INFO    WriterThread:59752 [datastore.py:close():279] close: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred/wandb/run-20240303_161329-1kszf3dk/run-1kszf3dk.wandb
+2024-03-03 16:14:10,519 INFO    MainThread:59752 [internal.py:handle_exit():80] Internal process exited
+2024-03-03 16:14:10,520 WARNING MsgRouterThr:59752 [router.py:message_loop():73] EOFError seen in message_loop

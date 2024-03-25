@@ -1,0 +1,1232 @@
+2024-03-01 17:58:36,503 INFO    StreamThr :77827 [internal.py:wandb_internal():90] W&B internal server running at pid: 77827, started at: 2024-03-01 17:58:36.501664
+2024-03-01 17:58:36,505 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: status
+2024-03-01 17:58:36,507 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: status
+2024-03-01 17:58:36,508 INFO    WriterThread:77827 [datastore.py:open_for_write():75] open: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/run-3283iu18.wandb
+2024-03-01 17:58:36,509 DEBUG   SenderThread:77827 [sender.py:send():302] send: header
+2024-03-01 17:58:36,532 DEBUG   SenderThread:77827 [sender.py:send():302] send: run
+2024-03-01 17:58:38,093 INFO    SenderThread:77827 [dir_watcher.py:__init__():216] watching files in: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files
+2024-03-01 17:58:38,093 INFO    SenderThread:77827 [sender.py:_start_run_threads():913] run started: 3283iu18 with start time 1709287116.484659
+2024-03-01 17:58:38,098 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:38,098 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:38,099 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: check_version
+2024-03-01 17:58:38,099 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: check_version
+2024-03-01 17:58:38,172 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: run_start
+2024-03-01 17:58:38,175 DEBUG   HandlerThread:77827 [meta.py:__init__():35] meta init
+2024-03-01 17:58:38,175 DEBUG   HandlerThread:77827 [meta.py:__init__():50] meta init done
+2024-03-01 17:58:38,175 DEBUG   HandlerThread:77827 [meta.py:probe():216] probe
+2024-03-01 17:58:38,180 DEBUG   HandlerThread:77827 [meta.py:_setup_git():206] setup git
+2024-03-01 17:58:38,201 DEBUG   HandlerThread:77827 [meta.py:_setup_git():213] setup git done
+2024-03-01 17:58:38,201 DEBUG   HandlerThread:77827 [meta.py:_save_pip():54] save pip
+2024-03-01 17:58:38,201 DEBUG   HandlerThread:77827 [meta.py:_save_pip():68] save pip done
+2024-03-01 17:58:38,201 DEBUG   HandlerThread:77827 [meta.py:_save_conda():75] save conda
+2024-03-01 17:58:39,099 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:58:39,099 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/requirements.txt
+2024-03-01 17:58:39,099 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/conda-environment.yaml
+2024-03-01 17:58:40,061 DEBUG   HandlerThread:77827 [meta.py:_save_conda():85] save conda done
+2024-03-01 17:58:40,061 DEBUG   HandlerThread:77827 [meta.py:probe():254] probe done
+2024-03-01 17:58:40,063 DEBUG   SenderThread:77827 [sender.py:send():302] send: telemetry
+2024-03-01 17:58:40,063 DEBUG   SenderThread:77827 [sender.py:send():302] send: files
+2024-03-01 17:58:40,064 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2024-03-01 17:58:40,067 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 17:58:40,067 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 17:58:40,104 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/conda-environment.yaml
+2024-03-01 17:58:40,104 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-metadata.json
+2024-03-01 17:58:40,432 DEBUG   SenderThread:77827 [sender.py:send():302] send: telemetry
+2024-03-01 17:58:40,798 INFO    Thread-16 :77827 [upload_job.py:push():138] Uploaded file /var/folders/yj/l06f44ld41527cq9fqd03wxw0000gn/T/tmpjh_z32zwwandb/t98crzvq-wandb-metadata.json
+2024-03-01 17:58:40,810 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:40,811 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:40,811 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:40,811 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:41,108 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:58:41,108 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:58:43,111 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:58:43,417 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:43,417 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:43,417 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:43,418 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:43,418 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:43,418 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:43,418 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:43,419 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:44,111 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:58:45,112 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:58:46,479 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:46,479 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:46,479 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:46,479 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:46,480 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:46,480 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:46,480 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:46,480 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:47,117 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:58:49,122 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:58:49,436 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:49,437 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:49,437 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:49,437 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:49,438 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:49,438 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:49,438 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:49,439 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:50,122 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:58:51,122 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:58:52,491 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:52,492 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:52,492 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:52,492 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:52,493 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:52,493 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:52,493 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:52,493 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:53,123 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:58:55,129 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:58:55,441 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 17:58:55,441 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 17:58:55,559 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:55,560 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:55,860 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:55,860 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:55,861 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:55,861 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:55,861 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:55,862 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:56,129 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:58:57,132 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:58:58,661 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:58,662 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:58:58,662 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:58,662 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:58,663 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:58,663 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:58:58,663 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:58:58,663 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:58:59,133 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:01,141 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:01,897 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:01,897 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:01,897 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:01,897 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:01,898 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:01,898 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:01,898 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:01,898 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:02,143 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:05,147 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:05,230 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:05,230 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:05,230 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:05,231 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:05,231 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:05,231 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:05,231 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:05,231 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:06,152 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:07,153 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:08,154 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/config.yaml
+2024-03-01 17:59:09,434 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:09,435 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:09,436 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:09,436 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:09,438 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:09,438 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:09,439 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:09,439 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:10,157 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:10,865 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 17:59:10,865 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 17:59:11,158 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:12,726 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:12,727 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:12,727 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:12,728 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:12,728 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:12,729 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:12,729 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:12,729 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:13,159 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:15,161 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:15,936 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:15,937 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:15,937 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:15,938 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:15,938 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:15,938 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:15,938 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:15,938 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:16,161 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:18,983 DEBUG   SenderThread:77827 [sender.py:send():302] send: stats
+2024-03-01 17:59:19,137 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:19,138 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:19,138 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:19,138 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:19,139 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:19,139 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:19,139 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:19,139 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:19,166 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:19,166 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:21,168 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:22,112 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:22,113 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:22,113 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:22,113 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:22,115 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:22,115 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:22,115 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:22,115 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:22,171 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:25,175 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:25,304 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:25,305 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:25,305 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:25,305 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:25,306 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:25,306 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:25,306 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:25,306 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:26,175 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:26,210 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 17:59:26,210 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 17:59:27,177 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:28,304 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:28,304 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:28,304 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:28,304 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:28,305 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:28,305 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:28,305 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:28,305 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:29,179 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:31,181 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:31,421 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:31,421 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:31,422 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:31,422 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:31,423 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:31,423 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:31,423 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:31,423 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:32,182 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:33,183 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:34,449 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:34,449 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:34,449 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:34,450 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:34,450 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:34,450 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:34,450 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:34,450 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:35,185 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:37,187 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:37,380 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:37,380 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:37,381 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:37,381 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:37,381 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:37,381 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:37,381 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:37,382 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:38,188 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:39,189 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:40,270 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:40,270 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:40,270 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:40,271 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:40,271 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:40,271 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:40,271 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:40,272 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:41,192 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:41,564 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 17:59:41,564 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 17:59:43,194 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:43,233 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:43,234 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:43,234 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:43,234 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:43,235 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:43,235 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:43,236 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:43,236 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:44,197 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:45,200 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:46,234 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:46,235 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:46,235 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:46,236 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:46,236 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:46,236 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:46,236 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:46,236 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:47,202 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:49,204 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:49,433 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:49,434 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:49,434 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:49,435 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:49,435 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:49,435 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:49,435 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:49,436 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:50,204 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:51,205 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:52,540 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:52,540 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:52,540 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:52,541 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:52,541 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:52,541 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:52,541 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:52,541 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:53,209 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:55,210 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:55,526 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:55,527 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:55,527 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:55,527 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:55,528 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:55,529 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:55,529 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:55,529 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:56,211 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 17:59:56,848 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 17:59:56,849 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 17:59:57,213 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 17:59:58,596 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:58,597 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 17:59:58,597 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:58,597 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:58,597 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:58,598 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 17:59:58,598 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 17:59:58,598 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 17:59:59,215 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:01,217 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:01,605 DEBUG   SenderThread:77827 [sender.py:send():302] send: stats
+2024-03-01 18:00:01,670 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:01,670 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:01,670 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:01,671 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:01,672 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:01,672 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:01,672 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:01,672 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:02,218 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:03,220 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:04,651 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:04,651 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:04,652 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:04,652 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:04,652 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:04,653 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:04,653 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:04,653 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:05,226 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:07,230 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:07,655 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:07,656 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:07,656 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:07,656 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:07,656 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:07,656 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:07,656 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:07,657 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:08,232 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:09,237 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:10,735 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:10,735 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:10,736 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:10,736 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:10,737 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:10,737 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:10,737 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:10,737 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:11,239 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:12,310 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:00:12,310 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:00:13,243 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:13,811 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:13,811 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:13,811 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:13,812 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:13,813 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:13,813 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:13,813 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:13,814 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:14,244 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:15,244 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:16,903 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:16,903 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:16,903 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:16,904 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:16,904 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:16,904 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:16,904 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:16,905 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:17,246 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:19,248 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:19,849 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:19,850 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:19,850 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:19,850 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:19,851 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:19,851 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:19,851 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:19,851 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:20,249 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:21,254 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:22,875 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:22,876 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:22,876 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:22,876 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:22,877 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:22,877 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:22,877 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:22,877 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:23,256 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:25,258 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:25,842 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:25,842 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:25,842 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:25,843 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:25,844 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:25,844 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:25,844 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:25,844 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:26,261 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:27,261 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:27,982 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:00:27,983 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:00:28,859 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:28,861 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:28,861 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:28,862 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:28,862 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:28,862 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:28,862 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:28,863 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:29,263 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:31,265 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:31,883 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:31,883 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:31,883 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:31,884 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:31,886 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:31,886 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:31,886 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:31,886 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:32,265 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:33,269 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:34,890 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:34,891 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:34,891 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:34,891 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:34,892 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:34,892 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:34,893 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:34,893 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:35,270 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:37,271 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:38,076 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:38,076 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:38,077 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:38,077 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:38,078 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:38,078 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:38,078 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:38,078 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:38,273 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:39,273 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:41,022 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:41,023 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:41,023 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:41,023 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:41,024 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:41,024 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:41,024 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:41,025 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:41,277 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:43,278 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:43,327 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:00:43,327 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:00:44,240 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:44,240 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:46,256 DEBUG   SenderThread:77827 [sender.py:send():302] send: stats
+2024-03-01 18:00:46,257 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:46,257 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:46,258 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:46,259 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:46,259 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:46,259 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:46,280 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:47,280 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:47,358 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:47,358 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:47,358 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:47,358 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:47,359 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:47,359 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:47,359 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:47,359 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:48,281 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:49,283 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:50,344 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:50,345 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:50,345 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:50,345 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:50,347 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:50,347 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:50,347 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:50,347 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:51,287 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:53,288 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:53,314 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:53,314 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:53,315 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:53,315 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:53,315 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:53,315 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:53,315 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:53,315 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:54,289 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:55,289 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:56,433 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:56,433 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:56,434 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:56,434 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:56,435 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:56,436 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:56,436 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:56,436 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:57,291 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:00:59,293 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:00:59,361 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:59,361 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:00:59,361 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:59,362 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:59,362 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:00:59,362 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:00:59,362 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:00:59,362 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:00,295 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:01,259 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:01:01,259 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:01:01,295 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:02,296 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:02,297 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:02,297 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:02,297 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:02,298 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:02,298 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:02,298 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:02,298 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:03,302 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:05,308 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:05,400 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:05,401 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:05,401 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:05,401 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:05,403 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:05,403 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:05,403 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:05,403 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:06,308 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:07,309 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:08,466 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:08,466 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:08,467 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:08,467 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:08,467 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:08,467 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:08,467 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:08,467 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:09,313 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:11,314 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:11,621 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:11,622 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:11,622 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:11,623 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:11,623 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:11,623 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:11,623 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:11,624 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:12,317 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:13,319 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:14,675 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:14,676 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:14,676 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:14,676 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:14,676 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:14,677 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:14,677 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:14,677 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:15,322 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:16,738 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:01:16,739 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:01:17,327 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:17,831 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:17,832 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:17,832 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:17,833 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:17,833 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:17,833 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:17,833 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:17,833 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:18,330 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:19,336 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:20,924 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:20,924 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:20,924 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:20,924 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:20,925 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:20,925 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:20,925 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:20,925 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:21,338 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:23,341 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:23,856 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:23,856 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:23,857 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:23,857 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:23,858 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:23,858 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:23,858 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:23,858 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:24,344 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:25,346 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:26,065 DEBUG   SenderThread:77827 [sender.py:send():302] send: stats
+2024-03-01 18:01:26,934 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:26,934 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:26,935 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:26,935 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:26,936 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:26,937 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:26,937 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:26,937 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:27,346 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:29,348 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:30,037 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:30,038 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:30,038 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:30,038 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:30,038 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:30,039 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:30,039 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:30,039 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:30,348 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:31,349 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:32,176 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:01:32,177 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:01:33,078 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:33,079 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:33,079 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:33,080 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:33,080 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:33,080 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:33,081 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:33,081 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:33,351 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:35,352 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:36,040 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:36,041 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:36,041 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:36,042 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:36,042 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:36,042 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:36,042 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:36,042 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:36,353 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:37,353 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:38,965 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:38,965 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:38,965 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:38,966 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:38,966 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:38,966 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:38,966 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:38,967 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:39,356 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:41,358 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:41,907 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:41,908 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:41,909 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:41,909 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:41,909 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:41,910 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:41,910 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:41,910 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:42,359 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:43,360 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:44,935 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:44,936 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:44,936 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:44,936 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:44,937 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:44,937 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:44,937 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:44,937 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:45,366 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:47,369 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:47,959 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:47,960 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:47,960 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:47,960 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:47,960 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:47,960 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:47,960 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:47,961 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:47,985 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:01:47,985 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:01:48,370 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:49,375 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:50,981 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:50,982 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:50,982 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:50,983 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:50,984 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:50,985 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:50,985 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:50,985 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:51,377 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:53,378 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:53,969 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:53,970 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:53,970 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:53,970 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:53,971 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:53,971 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:53,971 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:53,971 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:54,378 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:55,379 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:01:56,994 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:56,994 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:01:56,995 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:56,995 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:56,996 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:56,996 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:01:56,996 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:01:56,996 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:01:57,380 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:01:59,382 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:00,012 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:00,012 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:00,012 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:00,012 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:00,013 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:00,014 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:00,014 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:00,014 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:00,383 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:01,384 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:03,175 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:03,176 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:03,176 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:03,176 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:03,177 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:03,178 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:03,178 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:03,178 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:03,386 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:03,634 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:02:03,634 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:02:05,393 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:06,155 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:06,156 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:06,156 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:06,156 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:06,157 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:06,157 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:06,157 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:06,158 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:06,393 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:07,399 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:08,180 DEBUG   SenderThread:77827 [sender.py:send():302] send: stats
+2024-03-01 18:02:09,163 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:09,163 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:09,163 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:09,164 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:09,164 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:09,164 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:09,164 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:09,164 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:09,400 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:11,402 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:12,157 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:12,158 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:12,158 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:12,158 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:12,160 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:12,160 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:12,160 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:12,160 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:12,404 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:13,406 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:15,105 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:15,105 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:15,105 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:15,106 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:15,107 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:15,107 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:15,107 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:15,107 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:15,407 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:17,412 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:18,042 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:18,043 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:18,043 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:18,043 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:18,044 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:18,044 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:18,044 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:18,044 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:18,413 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:19,034 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:02:19,034 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:02:19,415 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:21,004 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:21,005 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:21,005 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:21,005 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:21,006 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:21,006 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:21,006 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:21,006 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:21,419 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:23,422 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:23,870 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:23,870 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:23,870 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:23,871 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:23,871 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:23,872 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:23,872 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:23,872 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:24,424 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:25,426 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:27,188 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:27,189 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:27,189 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:27,190 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:27,191 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:27,191 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:27,191 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:27,191 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:27,428 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:29,429 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:30,262 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:30,262 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:30,262 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:30,263 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:30,263 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:30,263 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:30,263 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:30,263 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:30,430 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:31,431 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:33,340 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:33,341 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:33,341 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:33,342 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:33,343 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:33,343 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:33,343 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:33,343 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:33,432 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:34,335 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:02:34,335 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:02:35,433 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:36,348 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:36,349 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:36,349 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:36,349 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:36,349 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:36,350 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:36,350 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:36,350 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:36,434 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:37,434 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:39,445 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:39,446 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:39,446 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:39,447 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:39,448 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:39,448 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:39,449 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:39,449 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:40,440 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:41,442 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:42,501 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:42,501 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:42,502 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:42,502 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:42,502 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:42,503 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:42,503 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:42,503 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:43,445 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:45,451 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:45,502 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:45,502 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:45,502 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:45,503 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:45,503 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:45,503 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:45,503 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:45,503 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:46,451 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:47,452 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:48,603 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:48,603 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:48,603 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:48,604 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:48,604 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:48,604 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:48,604 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:48,604 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:49,456 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:49,928 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:02:49,928 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:02:50,432 DEBUG   SenderThread:77827 [sender.py:send():302] send: stats
+2024-03-01 18:02:51,457 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:51,686 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:51,687 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:51,687 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:51,688 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:51,689 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:51,689 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:51,689 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:51,689 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:52,459 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:53,460 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:54,719 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:54,719 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:54,719 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:54,720 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:54,720 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:54,720 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:54,720 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:54,720 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:55,463 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:57,464 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:02:57,703 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:57,703 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:02:57,703 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:57,704 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:57,704 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:57,704 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:02:57,704 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:02:57,705 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:02:58,465 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:02:59,466 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:00,868 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:00,869 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:00,869 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:00,870 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:00,871 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:00,872 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:00,872 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:00,872 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:01,467 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:03,469 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:03,905 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:03,906 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:03,906 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:03,906 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:03,907 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:03,907 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:03,907 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:03,907 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:04,470 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:05,280 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:03:05,280 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:03:05,470 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:06,948 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:06,948 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:06,948 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:06,949 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:06,950 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:06,950 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:06,950 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:06,950 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:07,471 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:09,477 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:09,984 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:09,984 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:09,984 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:09,985 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:09,985 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:09,985 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:09,985 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:09,986 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:10,481 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:11,481 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:13,037 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:13,037 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:13,038 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:13,038 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:13,038 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:13,038 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:13,038 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:13,038 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:13,483 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:15,484 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:16,044 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:16,045 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:16,045 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:16,045 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:16,045 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:16,046 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:16,046 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:16,046 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:16,485 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:17,486 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:19,196 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:19,197 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:19,197 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:19,197 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:19,197 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:19,198 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:19,198 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:19,198 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:19,488 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:20,711 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:03:20,711 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:03:21,490 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:22,132 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:22,133 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:22,133 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:22,133 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:22,133 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:22,134 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:22,134 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:22,134 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:22,490 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:23,490 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:25,168 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:25,168 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:25,168 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:25,168 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:25,169 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:25,169 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:25,169 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:25,169 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:25,491 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:27,495 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:28,084 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:28,084 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:28,084 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:28,085 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:28,085 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:28,086 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:28,086 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:28,086 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:28,496 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:29,496 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:30,969 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:30,970 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:30,970 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:30,970 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:30,970 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:30,971 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:30,971 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:30,971 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:31,501 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:32,583 DEBUG   SenderThread:77827 [sender.py:send():302] send: stats
+2024-03-01 18:03:33,502 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:33,952 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:33,952 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:33,953 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:33,953 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:33,953 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:33,954 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:33,954 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:33,954 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:34,503 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:35,505 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:36,149 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-01 18:03:36,149 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: stop_status
+2024-03-01 18:03:36,971 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:36,971 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:36,971 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:36,972 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:36,972 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:36,972 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:36,972 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:36,972 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:37,508 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:39,510 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:39,900 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:39,901 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:39,901 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:39,901 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:39,902 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:39,902 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:39,902 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:39,902 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:40,511 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:41,512 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:43,083 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:43,083 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:43,084 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:43,084 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:43,086 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:43,086 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:43,086 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:43,086 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:43,513 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:45,514 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:46,094 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:46,094 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:46,094 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:46,095 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:46,515 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:46,547 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:46,547 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:46,547 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:46,548 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-01 18:03:46,549 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:46,549 DEBUG   SenderThread:77827 [sender.py:send():302] send: history
+2024-03-01 18:03:46,550 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:46,550 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:46,550 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:46,551 DEBUG   SenderThread:77827 [sender.py:send():302] send: exit
+2024-03-01 18:03:46,551 INFO    SenderThread:77827 [sender.py:send_exit():438] handling exit code: 0
+2024-03-01 18:03:46,551 INFO    SenderThread:77827 [sender.py:send_exit():440] handling runtime: 308
+2024-03-01 18:03:46,551 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:46,551 INFO    SenderThread:77827 [sender.py:send_exit():446] send defer
+2024-03-01 18:03:46,551 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:46,552 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:46,552 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 0
+2024-03-01 18:03:46,552 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:46,552 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 0
+2024-03-01 18:03:46,552 INFO    SenderThread:77827 [sender.py:transition_state():459] send defer: 1
+2024-03-01 18:03:46,552 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:46,552 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 1
+2024-03-01 18:03:47,272 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:47,272 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:47,273 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 1
+2024-03-01 18:03:47,273 INFO    SenderThread:77827 [sender.py:transition_state():459] send defer: 2
+2024-03-01 18:03:47,273 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:47,273 DEBUG   SenderThread:77827 [sender.py:send():302] send: stats
+2024-03-01 18:03:47,273 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:47,273 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 2
+2024-03-01 18:03:47,273 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:47,274 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 2
+2024-03-01 18:03:47,274 INFO    SenderThread:77827 [sender.py:transition_state():459] send defer: 3
+2024-03-01 18:03:47,274 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:47,274 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 3
+2024-03-01 18:03:47,274 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:47,274 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 3
+2024-03-01 18:03:47,274 INFO    SenderThread:77827 [sender.py:transition_state():459] send defer: 4
+2024-03-01 18:03:47,274 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:47,274 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 4
+2024-03-01 18:03:47,274 DEBUG   SenderThread:77827 [sender.py:send():302] send: summary
+2024-03-01 18:03:47,274 INFO    SenderThread:77827 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2024-03-01 18:03:47,274 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:47,274 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 4
+2024-03-01 18:03:47,274 INFO    SenderThread:77827 [sender.py:transition_state():459] send defer: 5
+2024-03-01 18:03:47,274 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:47,275 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 5
+2024-03-01 18:03:47,275 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:47,275 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 5
+2024-03-01 18:03:47,275 INFO    SenderThread:77827 [sender.py:transition_state():459] send defer: 6
+2024-03-01 18:03:47,275 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:47,275 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 6
+2024-03-01 18:03:47,275 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:47,275 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 6
+2024-03-01 18:03:47,379 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:47,521 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:47,521 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:49,065 INFO    SenderThread:77827 [sender.py:transition_state():459] send defer: 7
+2024-03-01 18:03:49,065 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:49,066 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:49,066 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 7
+2024-03-01 18:03:49,067 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:49,067 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 7
+2024-03-01 18:03:49,067 INFO    SenderThread:77827 [dir_watcher.py:finish():362] shutting down directory watcher
+2024-03-01 18:03:49,173 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:49,525 INFO    Thread-12 :77827 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:49,526 INFO    SenderThread:77827 [dir_watcher.py:finish():392] scan: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files
+2024-03-01 18:03:49,526 INFO    SenderThread:77827 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/requirements.txt requirements.txt
+2024-03-01 18:03:49,527 INFO    SenderThread:77827 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log output.log
+2024-03-01 18:03:49,527 INFO    SenderThread:77827 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/config.yaml config.yaml
+2024-03-01 18:03:49,532 INFO    SenderThread:77827 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json wandb-summary.json
+2024-03-01 18:03:49,535 INFO    SenderThread:77827 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/conda-environment.yaml conda-environment.yaml
+2024-03-01 18:03:49,535 INFO    SenderThread:77827 [dir_watcher.py:finish():406] scan save: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-metadata.json wandb-metadata.json
+2024-03-01 18:03:49,536 INFO    SenderThread:77827 [sender.py:transition_state():459] send defer: 8
+2024-03-01 18:03:49,539 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:49,546 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:49,546 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 8
+2024-03-01 18:03:49,547 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:49,547 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 8
+2024-03-01 18:03:49,547 INFO    SenderThread:77827 [file_pusher.py:finish():171] shutting down file pusher
+2024-03-01 18:03:49,650 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:49,651 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:49,757 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:49,757 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:49,863 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:49,863 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:49,973 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:49,973 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:50,082 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:50,082 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:50,183 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:50,183 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:50,290 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:50,290 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:50,305 INFO    Thread-21 :77827 [upload_job.py:push():138] Uploaded file /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/conda-environment.yaml
+2024-03-01 18:03:50,314 INFO    Thread-20 :77827 [upload_job.py:push():138] Uploaded file /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/wandb-summary.json
+2024-03-01 18:03:50,395 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:50,396 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:50,448 INFO    Thread-18 :77827 [upload_job.py:push():138] Uploaded file /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/output.log
+2024-03-01 18:03:50,501 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:50,501 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:50,605 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:50,605 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:50,713 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:50,713 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:50,820 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:50,820 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:50,923 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:50,924 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:50,985 INFO    Thread-17 :77827 [upload_job.py:push():138] Uploaded file /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/requirements.txt
+2024-03-01 18:03:50,988 INFO    Thread-19 :77827 [upload_job.py:push():138] Uploaded file /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/files/config.yaml
+2024-03-01 18:03:51,028 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:51,028 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:51,135 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:51,136 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:51,189 INFO    Thread-11 :77827 [sender.py:transition_state():459] send defer: 9
+2024-03-01 18:03:51,190 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:51,190 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 9
+2024-03-01 18:03:51,191 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:51,191 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 9
+2024-03-01 18:03:51,239 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:51,816 INFO    SenderThread:77827 [sender.py:transition_state():459] send defer: 10
+2024-03-01 18:03:51,817 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:51,818 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:51,819 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 10
+2024-03-01 18:03:51,822 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:51,822 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 10
+2024-03-01 18:03:51,825 INFO    SenderThread:77827 [sender.py:transition_state():459] send defer: 11
+2024-03-01 18:03:51,832 DEBUG   SenderThread:77827 [sender.py:send():302] send: final
+2024-03-01 18:03:51,832 DEBUG   SenderThread:77827 [sender.py:send():302] send: footer
+2024-03-01 18:03:51,833 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: defer
+2024-03-01 18:03:51,833 INFO    HandlerThread:77827 [handler.py:handle_request_defer():164] handle defer: 11
+2024-03-01 18:03:51,833 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: defer
+2024-03-01 18:03:51,833 INFO    SenderThread:77827 [sender.py:send_request_defer():455] handle sender defer: 11
+2024-03-01 18:03:51,928 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-01 18:03:51,928 DEBUG   SenderThread:77827 [sender.py:send_request():316] send_request: poll_exit
+2024-03-01 18:03:51,929 INFO    SenderThread:77827 [file_pusher.py:join():176] waiting for file pusher
+2024-03-01 18:03:52,766 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: sampled_history
+2024-03-01 18:03:52,776 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: get_summary
+2024-03-01 18:03:52,777 INFO    MainThread:77827 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2024-03-01 18:03:52,778 INFO    MainThread:77827 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2024-03-01 18:03:52,778 INFO    MainThread:77827 [wandb_run.py:_footer_sync_info():3261] logging synced files
+2024-03-01 18:03:52,779 DEBUG   HandlerThread:77827 [handler.py:handle_request():141] handle_request: shutdown
+2024-03-01 18:03:52,779 INFO    HandlerThread:77827 [handler.py:finish():810] shutting down handler
+2024-03-01 18:03:52,835 INFO    WriterThread:77827 [datastore.py:close():279] close: /Users/dujiaxing/FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/moleculenet_graph_clf/wandb/run-20240301_175836-3283iu18/run-3283iu18.wandb
+2024-03-01 18:03:53,665 INFO    SenderThread:77827 [sender.py:finish():1312] shutting down sender
+2024-03-01 18:03:53,666 INFO    SenderThread:77827 [file_pusher.py:finish():171] shutting down file pusher
+2024-03-01 18:03:53,666 INFO    SenderThread:77827 [file_pusher.py:join():176] waiting for file pusher
+2024-03-01 18:03:54,560 INFO    MainThread:77827 [internal.py:handle_exit():80] Internal process exited

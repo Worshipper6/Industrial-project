@@ -44,7 +44,7 @@ def train():
         out = model(data.x, data.edge_index)
         loss = criterion(out[data.train_mask], data.y[data.train_mask])
         for param in model.parameters():
-            loss += 0.1 * torch.norm(param, p=2)  # L2 regularization
+            loss += 0.005 * torch.norm(param, p=2)**2  # L2 regularization
         loss.backward()
         optimizer.step()
 

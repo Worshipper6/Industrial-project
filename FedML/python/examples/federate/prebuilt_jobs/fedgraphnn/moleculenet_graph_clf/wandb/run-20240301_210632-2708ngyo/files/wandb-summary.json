@@ -1,0 +1,1 @@
+{"ListenStart": 1709298406.248698, "_timestamp": 1709298574.693166, "_runtime": 181.8361461162567, "_step": 201, "Comm/send_delay": 0.0016632080078125, "BusyTime": 1.4427740573883057, "TotalTime": 168.44446182250977, "_wandb": {"runtime": 181}}

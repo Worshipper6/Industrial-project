@@ -1,0 +1,200 @@
+Epoch = 0, Iter = 296/296: Test Score = 0.4180454978217593
+Current best = 0.4180454978217593
+Epoch = 1, Iter = 296/296: Test Score = 0.45253430849273435
+Current best = 0.45253430849273435
+Epoch = 2, Iter = 296/296: Test Score = 0.47159030803112045
+Current best = 0.47159030803112045
+Epoch = 3, Iter = 296/296: Test Score = 0.4886952674956484
+Current best = 0.4886952674956484
+Epoch = 4, Iter = 296/296: Test Score = 0.49472630141465435
+Current best = 0.49472630141465435
+Epoch = 5, Iter = 296/296: Test Score = 0.4994398122770068
+Current best = 0.4994398122770068
+Epoch = 6, Iter = 296/296: Test Score = 0.5066369021859343
+Current best = 0.5066369021859343
+Epoch = 7, Iter = 296/296: Test Score = 0.43041170191281264
+Current best = 0.5066369021859343
+Epoch = 8, Iter = 296/296: Test Score = 0.4842870950059144
+Current best = 0.5066369021859343
+Epoch = 9, Iter = 296/296: Test Score = 0.5100076454805111
+Current best = 0.5100076454805111
+Epoch = 10, Iter = 296/296: Test Score = 0.5912997797716935
+Current best = 0.5912997797716935
+Epoch = 11, Iter = 296/296: Test Score = 0.4767365819412789
+Current best = 0.5912997797716935
+Epoch = 12, Iter = 296/296: Test Score = 0.6653743881211351
+Current best = 0.6653743881211351
+Epoch = 13, Iter = 296/296: Test Score = 0.6740633084254157
+Current best = 0.6740633084254157
+Epoch = 14, Iter = 296/296: Test Score = 0.6940353230816576
+Current best = 0.6940353230816576
+Epoch = 15, Iter = 296/296: Test Score = 0.7094921766057913
+Current best = 0.7094921766057913
+Epoch = 16, Iter = 296/296: Test Score = 0.6951508900493351
+Current best = 0.7094921766057913
+Epoch = 17, Iter = 296/296: Test Score = 0.7132427896867757
+Current best = 0.7132427896867757
+Epoch = 18, Iter = 296/296: Test Score = 0.7214280218881932
+Current best = 0.7214280218881932
+Epoch = 19, Iter = 296/296: Test Score = 0.7293091178365694
+Current best = 0.7293091178365694
+Epoch = 20, Iter = 296/296: Test Score = 0.7291564486502601
+Current best = 0.7293091178365694
+Epoch = 21, Iter = 296/296: Test Score = 0.7023479799582624
+Current best = 0.7293091178365694
+Epoch = 22, Iter = 296/296: Test Score = 0.7305761518709789
+Current best = 0.7305761518709789
+Epoch = 23, Iter = 296/296: Test Score = 0.7386351615167863
+Current best = 0.7386351615167863
+Epoch = 24, Iter = 296/296: Test Score = 0.7447924179914024
+Current best = 0.7447924179914024
+Epoch = 25, Iter = 296/296: Test Score = 0.7522167085004279
+Current best = 0.7522167085004279
+Epoch = 26, Iter = 296/296: Test Score = 0.756550349576373
+Current best = 0.756550349576373
+Epoch = 27, Iter = 296/296: Test Score = 0.7708928382524067
+Current best = 0.7708928382524067
+Epoch = 28, Iter = 296/296: Test Score = 0.7579952973082138
+Current best = 0.7708928382524067
+Epoch = 29, Iter = 296/296: Test Score = 0.7732742371349164
+Current best = 0.7732742371349164
+Epoch = 30, Iter = 296/296: Test Score = 0.7754789244395718
+Current best = 0.7754789244395718
+Epoch = 31, Iter = 296/296: Test Score = 0.7618961753363531
+Current best = 0.7754789244395718
+Epoch = 32, Iter = 296/296: Test Score = 0.7617459103891984
+Current best = 0.7754789244395718
+Epoch = 33, Iter = 296/296: Test Score = 0.7732489926237943
+Current best = 0.7754789244395718
+Epoch = 34, Iter = 296/296: Test Score = 0.7574892049661964
+Current best = 0.7754789244395718
+Epoch = 35, Iter = 296/296: Test Score = 0.768561928392141
+Current best = 0.7754789244395718
+Epoch = 36, Iter = 296/296: Test Score = 0.7543973534135388
+Current best = 0.7754789244395718
+Epoch = 37, Iter = 296/296: Test Score = 0.7646093592221805
+Current best = 0.7754789244395718
+Epoch = 38, Iter = 296/296: Test Score = 0.7739077541521211
+Current best = 0.7754789244395718
+Epoch = 39, Iter = 296/296: Test Score = 0.7743140705692276
+Current best = 0.7754789244395718
+Epoch = 40, Iter = 296/296: Test Score = 0.7530257349759095
+Current best = 0.7754789244395718
+Epoch = 41, Iter = 296/296: Test Score = 0.7629107642595425
+Current best = 0.7754789244395718
+Epoch = 42, Iter = 296/296: Test Score = 0.7620500466422396
+Current best = 0.7754789244395718
+Epoch = 43, Iter = 296/296: Test Score = 0.7765187578738832
+Current best = 0.7765187578738832
+Epoch = 44, Iter = 296/296: Test Score = 0.7885808257118953
+Current best = 0.7885808257118953
+Epoch = 45, Iter = 296/296: Test Score = 0.7892395872402219
+Current best = 0.7892395872402219
+Epoch = 46, Iter = 296/296: Test Score = 0.7685859707836857
+Current best = 0.7892395872402219
+Epoch = 47, Iter = 296/296: Test Score = 0.7706896800438532
+Current best = 0.7892395872402219
+Epoch = 48, Iter = 296/296: Test Score = 0.7874412163526731
+Current best = 0.7892395872402219
+Epoch = 49, Iter = 296/296: Test Score = 0.7684597482280757
+Current best = 0.7892395872402219
+Epoch = 50, Iter = 296/296: Test Score = 0.7881757114143658
+Current best = 0.7892395872402219
+Epoch = 51, Iter = 296/296: Test Score = 0.7706403931411866
+Current best = 0.7892395872402219
+Epoch = 52, Iter = 296/296: Test Score = 0.779661098448785
+Current best = 0.7892395872402219
+Epoch = 53, Iter = 296/296: Test Score = 0.7687638844811171
+Current best = 0.7892395872402219
+Epoch = 54, Iter = 296/296: Test Score = 0.7847544790975447
+Current best = 0.7892395872402219
+Epoch = 55, Iter = 296/296: Test Score = 0.7636957483434792
+Current best = 0.7892395872402219
+Epoch = 56, Iter = 296/296: Test Score = 0.7782942884894646
+Current best = 0.7892395872402219
+Epoch = 57, Iter = 296/296: Test Score = 0.8000093765327024
+Current best = 0.8000093765327024
+Epoch = 58, Iter = 296/296: Test Score = 0.7982098035255762
+Current best = 0.8000093765327024
+Epoch = 59, Iter = 296/296: Test Score = 0.7931416673879383
+Current best = 0.8000093765327024
+Epoch = 60, Iter = 296/296: Test Score = 0.7914442745448775
+Current best = 0.8000093765327024
+Epoch = 61, Iter = 296/296: Test Score = 0.7886577613648386
+Current best = 0.8000093765327024
+Epoch = 62, Iter = 296/296: Test Score = 0.7934458036409797
+Current best = 0.8000093765327024
+Epoch = 63, Iter = 296/296: Test Score = 0.7892407893597992
+Current best = 0.8000093765327024
+Epoch = 64, Iter = 296/296: Test Score = 0.78412096208034
+Current best = 0.8000093765327024
+Epoch = 65, Iter = 296/296: Test Score = 0.798843320542781
+Current best = 0.8000093765327024
+Epoch = 66, Iter = 296/296: Test Score = 0.7813837358029677
+Current best = 0.8000093765327024
+Epoch = 67, Iter = 296/296: Test Score = 0.7848302126309108
+Current best = 0.8000093765327024
+Epoch = 68, Iter = 296/296: Test Score = 0.7873642806997297
+Current best = 0.8000093765327024
+Epoch = 69, Iter = 296/296: Test Score = 0.7723882750064914
+Current best = 0.8000093765327024
+Epoch = 70, Iter = 296/296: Test Score = 0.803075983574238
+Current best = 0.803075983574238
+Epoch = 71, Iter = 296/296: Test Score = 0.7888849619649365
+Current best = 0.803075983574238
+Epoch = 72, Iter = 296/296: Test Score = 0.7947392843060885
+Current best = 0.803075983574238
+Epoch = 73, Iter = 296/296: Test Score = 0.779837810026639
+Current best = 0.803075983574238
+Epoch = 74, Iter = 296/296: Test Score = 0.8104245405498975
+Current best = 0.8104245405498975
+Epoch = 75, Iter = 296/296: Test Score = 0.8033031841743362
+Current best = 0.8104245405498975
+Epoch = 76, Iter = 296/296: Test Score = 0.7914695190559995
+Current best = 0.8104245405498975
+Epoch = 77, Iter = 296/296: Test Score = 0.7987170979871709
+Current best = 0.8104245405498975
+Epoch = 78, Iter = 296/296: Test Score = 0.7868834328688343
+Current best = 0.8104245405498975
+Epoch = 79, Iter = 296/296: Test Score = 0.7752769683505958
+Current best = 0.8104245405498975
+Epoch = 80, Iter = 296/296: Test Score = 0.8024677110681554
+Current best = 0.8104245405498975
+Epoch = 81, Iter = 296/296: Test Score = 0.793648961849533
+Current best = 0.8104245405498975
+Epoch = 82, Iter = 296/296: Test Score = 0.7894427454487754
+Current best = 0.8104245405498975
+Epoch = 83, Iter = 296/296: Test Score = 0.7913685410115114
+Current best = 0.8104245405498975
+Epoch = 84, Iter = 296/296: Test Score = 0.787239260263697
+Current best = 0.8104245405498975
+Epoch = 85, Iter = 296/296: Test Score = 0.7861489378071416
+Current best = 0.8104245405498975
+Epoch = 86, Iter = 296/296: Test Score = 0.7891133646846119
+Current best = 0.8104245405498975
+Epoch = 87, Iter = 296/296: Test Score = 0.7807514209053403
+Current best = 0.8104245405498975
+Epoch = 88, Iter = 296/296: Test Score = 0.7907097794831848
+Current best = 0.8104245405498975
+Epoch = 89, Iter = 296/296: Test Score = 0.7886577613648384
+Current best = 0.8104245405498975
+Epoch = 90, Iter = 296/296: Test Score = 0.7973490859082735
+Current best = 0.8104245405498975
+Epoch = 91, Iter = 296/296: Test Score = 0.8015048132867872
+Current best = 0.8104245405498975
+Epoch = 92, Iter = 296/296: Test Score = 0.7977301578142582
+Current best = 0.8104245405498975
+Epoch = 93, Iter = 296/296: Test Score = 0.799528528701807
+Current best = 0.8104245405498975
+Epoch = 94, Iter = 296/296: Test Score = 0.782856332285085
+Current best = 0.8104245405498975
+Epoch = 95, Iter = 296/296: Test Score = 0.7907614706250061
+Current best = 0.8104245405498975
+Epoch = 96, Iter = 296/296: Test Score = 0.7901531981189233
+Current best = 0.8104245405498975
+Epoch = 97, Iter = 296/296: Test Score = 0.7924336189569449
+Current best = 0.8104245405498975
+Epoch = 98, Iter = 296/296: Test Score = 0.788126424511699
+Current best = 0.8104245405498975
+Epoch = 99, Iter = 296/296: Test Score = 0.7888356750622698
+Current best = 0.8104245405498975
