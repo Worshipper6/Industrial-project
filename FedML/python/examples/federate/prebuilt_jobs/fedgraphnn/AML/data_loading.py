@@ -94,12 +94,12 @@ def get_data(args):
     
     #Creating the final data objects
     tr_x, val_x, te_x = x, x, x
-    e_tr = tr_inds.numpy()
-    e_val = np.concatenate([tr_inds, val_inds])
+    e_tr, e_val, e_te = tr_inds.numpy(), val_inds.numpy(), te_inds.numpy()
+    #e_val = np.concatenate([tr_inds, val_inds])
 
     tr_edge_index,  tr_edge_attr,  tr_y,  tr_edge_times  = edge_index[:,e_tr],  edge_attr[e_tr],  y[e_tr],  timestamps[e_tr]
     val_edge_index, val_edge_attr, val_y, val_edge_times = edge_index[:,e_val], edge_attr[e_val], y[e_val], timestamps[e_val]
-    te_edge_index,  te_edge_attr,  te_y,  te_edge_times  = edge_index,          edge_attr,        y,        timestamps
+    te_edge_index,  te_edge_attr,  te_y,  te_edge_times  = edge_index[:,e_te],  edge_attr[e_te],  y[e_te],  timestamps[e_te]
 
     tr_data = GraphData (x=tr_x,  y=tr_y,  edge_index=tr_edge_index,  edge_attr=tr_edge_attr,  timestamps=tr_edge_times )
     val_data = GraphData(x=val_x, y=val_y, edge_index=val_edge_index, edge_attr=val_edge_attr, timestamps=val_edge_times)
