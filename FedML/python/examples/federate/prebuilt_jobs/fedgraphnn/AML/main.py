@@ -38,7 +38,7 @@ class Args():
         self.wandb = wandb
 
 
-args = Args(ports=False, tds=False, model='rgcn', data=None, reverse_mp=False, ego=False, emlps=False,\
+args = Args(ports=False, tds=False, model='pna', data=None, reverse_mp=False, ego=False, emlps=False,\
             n_epochs=100, batch_size=8192, num_neighs=[100,100], tqdm=True, wandb=False)
 
 
