@@ -65,6 +65,9 @@ class GraphData(Data):
         num_nodes: int = None,
         timestamps: OptTensor = None,
         node_timestamps: OptTensor = None,
+        tr_inds: OptTensor = None,
+        val_inds: OptTensor = None,
+        te_inds: OptTensor = None,
         **kwargs
         ):
         super().__init__(x, edge_index, edge_attr, y, pos, **kwargs)
@@ -72,6 +75,9 @@ class GraphData(Data):
         self.loss_fn = 'ce'
         self.num_nodes = int(self.x.shape[0])
         self.node_timestamps = node_timestamps
+        self.tr_inds = tr_inds
+        self.val_inds = val_inds
+        self.te_inds = te_inds
         if timestamps is not None:
             self.timestamps = timestamps  
         elif edge_attr is not None:
