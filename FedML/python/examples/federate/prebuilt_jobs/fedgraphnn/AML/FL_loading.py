@@ -18,7 +18,7 @@ def get_data(path, args):
     #replace this with your path to the respective AML data objects
     df_edges = pd.read_csv(path)
 
-    logging.info(f'Available Edge Features: {df_edges.columns.tolist()}')
+    # logging.info(f'Available Edge Features: {df_edges.columns.tolist()}')
 
     df_edges['Timestamp'] = df_edges['Timestamp'] - df_edges['Timestamp'].min()
 
@@ -34,8 +34,8 @@ def get_data(path, args):
     edge_features = ['Timestamp', 'Amount Received', 'Received Currency', 'Payment Format']
     node_features = ['Feature']
 
-    logging.info(f'Edge features being used: {edge_features}')
-    logging.info(f'Node features being used: {node_features} ("Feature" is a placeholder feature of all 1s)')
+    # logging.info(f'Edge features being used: {edge_features}')
+    # logging.info(f'Node features being used: {node_features} ("Feature" is a placeholder feature of all 1s)')
 
     x = torch.tensor(df_nodes.loc[:, node_features].to_numpy()).float()
     edge_index = torch.LongTensor(df_edges.loc[:, ['from_id', 'to_id']].to_numpy().T)
@@ -75,7 +75,7 @@ def get_data(path, args):
     i,j = min(split_scores, key=split_scores.get)
     #split contains a list for each split (train, validation and test) and each list contains the days that are part of the respective split
     split = [list(range(i)), list(range(i, j)), list(range(j, len(daily_totals)))]
-    logging.info(f'Calculate split: {split}')
+    # logging.info(f'Calculate split: {split}')
 
     #Now, we seperate the transactions based on their indices in the timestamp array
     split_inds = {k: [] for k in range(3)}
@@ -149,7 +149,7 @@ def get_loaders(tr_data, val_data, te_data, tr_inds, val_inds, te_inds, args):
 
         tr_loader = LinkNeighborLoader(tr_data, num_neighbors=args.num_neighs,
                                        edge_label_index=(('node', 'to', 'node'), tr_edge_label_index),
-                                       edge_label=tr_edge_label, batch_size=args.batch_size, shuffle=True)
+                                       edge_label=tr_edge_label, batch_size=args.batch_size, shuffle=True, drop_last=True)
 
         val_edge_label_index = val_data['node', 'to', 'node'].edge_index[:, val_inds]
         val_edge_label = val_data['node', 'to', 'node'].y[val_inds]
@@ -165,7 +165,7 @@ def get_loaders(tr_data, val_data, te_data, tr_inds, val_inds, te_inds, args):
                                        edge_label_index=(('node', 'to', 'node'), te_edge_label_index),
                                        edge_label=te_edge_label, batch_size=args.batch_size, shuffle=False)
     else:
-        tr_loader = LinkNeighborLoader(tr_data, num_neighbors=args.num_neighs, batch_size=args.batch_size, shuffle=True)
+        tr_loader = LinkNeighborLoader(tr_data, num_neighbors=args.num_neighs, batch_size=args.batch_size, shuffle=True, drop_last=True)
         val_loader = LinkNeighborLoader(val_data, num_neighbors=args.num_neighs,
                                         edge_label_index=val_data.edge_index[:, val_inds],
                                         edge_label=val_data.y[val_inds], batch_size=args.batch_size, shuffle=False)
@@ -196,17 +196,20 @@ def load_partition_data(args, global_path, local_path, client_number):
         client_tr_data, client_val_data, client_te_data, client_tr_inds, client_val_inds, client_te_inds = get_data(
             path, args)
         # Convert to dataloader
-        train_data_local_dict[client], val_data_local_dict[client], test_data_local_dict[client] = \
+        train_loader, val_loader, test_loader = \
             get_loaders(client_tr_data, client_val_data, client_te_data, client_tr_inds, client_val_inds, client_te_inds, args)
+        train_data_local_dict[client] = (train_loader, client_tr_inds)
+        val_data_local_dict[client] = (val_loader, client_val_inds)
+        test_data_local_dict[client] = (test_loader, client_te_inds)
         data_local_num_dict[client] = client_tr_data.x.shape[0] + client_val_data.x.shape[0] + client_te_data.x.shape[0]
 
     return (
         train_data_num,
         val_data_num,
         test_data_num,
-        global_tr_loader,
-        global_val_loader,
-        global_te_loader,
+        (global_tr_loader, global_tr_inds),
+        (global_val_loader, global_val_inds),
+        (global_te_loader, global_te_inds),
         data_local_num_dict,
         train_data_local_dict,
         val_data_local_dict,
