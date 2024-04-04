@@ -60,12 +60,12 @@ class FedClsTrainer(ClientTrainer):
             total_loss = total_examples = 0
             preds = []
             ground_truths = []
-            for idx_batch, batch in enumerate(train_data):
+            for idx_batch, batch in enumerate(train_data[0]):
                 optimizer.zero_grad()
                 # select the seed edges from which the batch was created
-                inds = batch.tr_inds.detach().cpu()
+                inds = train_data[1].detach().cpu()
                 batch_edge_inds = inds[batch.input_id.detach().cpu()]
-                batch_edge_ids = train_data.data.edge_attr.detach().cpu()[batch_edge_inds, 0]
+                batch_edge_ids = train_data[0].data.edge_attr.detach().cpu()[batch_edge_inds, 0]
                 mask = torch.isin(batch.edge_attr[:, 0].detach().cpu(), batch_edge_ids)
 
                 # remove the unique edge id from the edge features, as it's no longer needed
@@ -91,7 +91,7 @@ class FedClsTrainer(ClientTrainer):
                     test_data, device)
                 print(
                     "Epoch = {}, Iter = {}/{}: Test score = {}".format(
-                        epoch, idx_batch + 1, len(train_data), test_score
+                        epoch, idx_batch + 1, len(train_data[0]), test_score
                     )
                 )
                 if test_score < max_test_score:
@@ -107,21 +107,24 @@ class FedClsTrainer(ClientTrainer):
 
         return max_test_score, best_model_params
 
-    def test(self, test_data, device):
+    def test(self, test_data, device, args):
         logits = []
         preds = []
         ground_truths = []
-        for batch in test_data:
+        for batch in test_data[0]:
             # select the seed edges from which the batch was created
-            inds = batch.te_inds.detach().cpu()
+            inds = test_data[1].detach().cpu()
             batch_edge_inds = inds[batch.input_id.detach().cpu()]
-            batch_edge_ids = test_data.data.edge_attr.detach().cpu()[batch_edge_inds, 0]
+            batch_edge_ids = test_data[0].data.edge_attr.detach().cpu()[batch_edge_inds, 0]
             mask = torch.isin(batch.edge_attr[:, 0].detach().cpu(), batch_edge_ids)
             # remove the unique edge id from the edge features, as it's no longer needed
             batch.edge_attr = batch.edge_attr[:, 1:]
 
             with torch.no_grad():
-                batch.to(device)
+                #batch.to(device)
+                batch.x.to(device)
+                batch.edge_index.to(device)
+                batch.edge_attr.to(device)
                 out = self.model(batch.x, batch.edge_index, batch.edge_attr)
                 out = out[mask]
                 pred = out.argmax(dim=-1)
@@ -132,7 +135,11 @@ class FedClsTrainer(ClientTrainer):
         logit = torch.cat(logits, dim=0).cpu().numpy()
         ground_truth = torch.cat(ground_truths, dim=0).cpu().numpy()
         f1 = f1_score(ground_truth, pred)
-        roc = roc_auc_score(ground_truth, logit)
+        if len(np.unique(ground_truth)) == 2:
+            roc = roc_auc_score(ground_truth, logit)
+        else:
+            # ROC is not defined
+            roc = None
         recall = recall_score(ground_truth, pred)
         precision = precision_score(ground_truth, pred)
 
