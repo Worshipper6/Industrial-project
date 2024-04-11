@@ -14,7 +14,7 @@ def get_data(args):
     '''
 
     #replace this with your path to the respective AML data objects
-    df_edges = pd.read_csv('raw/formatted_transactions.csv')
+    df_edges = pd.read_csv('raw/uniform/client0')
 
     logging.info(f'Available Edge Features: {df_edges.columns.tolist()}')
 
