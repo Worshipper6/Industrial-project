@@ -4,6 +4,7 @@ import torch
 import logging
 import itertools
 from data_util import GraphData, HeteroData, z_norm, create_hetero_obj
+from train_util import add_arange_ids
 
 from torch_geometric.loader import LinkNeighborLoader
 
@@ -22,7 +23,7 @@ def get_data(path, args):
 
     df_edges['Timestamp'] = df_edges['Timestamp'] - df_edges['Timestamp'].min()
 
-    max_n_id = df_edges.loc[:, ['from_id', 'to_id']].to_numpy().max() + 1
+    max_n_id = 336889
     df_nodes = pd.DataFrame({'NodeID': np.arange(max_n_id), 'Feature': np.ones(max_n_id)})
     timestamps = torch.Tensor(df_edges['Timestamp'].to_numpy())
     y = torch.LongTensor(df_edges['Is Laundering'].to_numpy())
@@ -143,13 +144,15 @@ def get_data(path, args):
 
 
 def get_loaders(tr_data, val_data, te_data, tr_inds, val_inds, te_inds, args):
+    # add the unique ids to later find the seed edges
+    add_arange_ids([tr_data, val_data, te_data])
     if isinstance(tr_data, HeteroData):
         tr_edge_label_index = tr_data['node', 'to', 'node'].edge_index
         tr_edge_label = tr_data['node', 'to', 'node'].y
 
         tr_loader = LinkNeighborLoader(tr_data, num_neighbors=args.num_neighs,
                                        edge_label_index=(('node', 'to', 'node'), tr_edge_label_index),
-                                       edge_label=tr_edge_label, batch_size=args.batch_size, shuffle=True, drop_last=True)
+                                       edge_label=tr_edge_label, batch_size=args.batch_size, shuffle=True)
 
         val_edge_label_index = val_data['node', 'to', 'node'].edge_index[:, val_inds]
         val_edge_label = val_data['node', 'to', 'node'].y[val_inds]
@@ -165,7 +168,7 @@ def get_loaders(tr_data, val_data, te_data, tr_inds, val_inds, te_inds, args):
                                        edge_label_index=(('node', 'to', 'node'), te_edge_label_index),
                                        edge_label=te_edge_label, batch_size=args.batch_size, shuffle=False)
     else:
-        tr_loader = LinkNeighborLoader(tr_data, num_neighbors=args.num_neighs, batch_size=args.batch_size, shuffle=True, drop_last=True)
+        tr_loader = LinkNeighborLoader(tr_data, num_neighbors=args.num_neighs, batch_size=args.batch_size, shuffle=True)
         val_loader = LinkNeighborLoader(val_data, num_neighbors=args.num_neighs,
                                         edge_label_index=val_data.edge_index[:, val_inds],
                                         edge_label=val_data.y[val_inds], batch_size=args.batch_size, shuffle=False)
@@ -175,24 +178,29 @@ def get_loaders(tr_data, val_data, te_data, tr_inds, val_inds, te_inds, args):
 
     return tr_loader, val_loader, te_loader
 
-def load_partition_data(args, global_path, local_path, client_number):
+def load_partition_data(args):
     # Get global data
-    global_tr_data, global_val_data, global_te_data, global_tr_inds, global_val_inds, global_te_inds = get_data(global_path, args)
+    global_tr_data, global_val_data, global_te_data, global_tr_inds, global_val_inds, global_te_inds = get_data(args.global_path, args)
     # Convert to dataloader
     global_tr_loader, global_val_loader, global_te_loader = \
         get_loaders(global_tr_data, global_val_data, global_te_data, global_tr_inds, global_val_inds, global_te_inds, args)
-    train_data_num = global_tr_data.x.shape[0]
-    val_data_num = global_val_data.x.shape[0]
-    test_data_num = global_te_data.x.shape[0]
+    if args.reverse_mp:
+        train_data_num = global_tr_data.num_nodes
+        val_data_num = global_val_data.num_nodes
+        test_data_num = global_te_data.num_nodes
+    else:
+        train_data_num = global_tr_data.x.shape[0]
+        val_data_num = global_val_data.x.shape[0]
+        test_data_num = global_te_data.x.shape[0]
 
     # Clients
     train_data_local_dict = {}
     val_data_local_dict = {}
     test_data_local_dict = {}
     data_local_num_dict = {}
-    for client in range(client_number):
+    for client in range(args.client_number):
         # Get global data
-        path = local_path + str(client)
+        path = args.local_path + str(client)
         client_tr_data, client_val_data, client_te_data, client_tr_inds, client_val_inds, client_te_inds = get_data(
             path, args)
         # Convert to dataloader
@@ -201,7 +209,10 @@ def load_partition_data(args, global_path, local_path, client_number):
         train_data_local_dict[client] = (train_loader, client_tr_inds)
         val_data_local_dict[client] = (val_loader, client_val_inds)
         test_data_local_dict[client] = (test_loader, client_te_inds)
-        data_local_num_dict[client] = client_tr_data.x.shape[0] + client_val_data.x.shape[0] + client_te_data.x.shape[0]
+        if args.reverse_mp:
+            data_local_num_dict[client] = client_tr_data.num_nodes + client_val_data.num_nodes + client_te_data.num_nodes
+        else:
+            data_local_num_dict[client] = client_tr_data.x.shape[0] + client_val_data.x.shape[0] + client_te_data.x.shape[0]
 
     return (
         train_data_num,
