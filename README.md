@@ -17,6 +17,7 @@ python movie/local.py
 ```
 ## Anti-Money Laundering (AML) Detection
 - [AML](FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/AML)
+### Federated learning
 ```
 cd AML
 python AML_FL.py --cf fedml_config.yaml
