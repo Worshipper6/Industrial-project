@@ -1,6 +1,6 @@
 # Industrial-project
 ## Recommendation System
-- [Ciao](FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred)
+- [Epinions](FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/recsys_subgraph_link_pred)
 - [MovieLens](FedML/python/examples/federate/prebuilt_jobs/fedgraphnn/movie)
 ### Federated learning
 ```
